@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { IoIosArrowForward } from 'react-icons/io';
 import { BiCategory } from 'react-icons/bi';
-import { GiAmpleDress } from 'react-icons/gi';
+import { AiOutlineGift } from 'react-icons/ai';
+import { GiAmpleDress, GiLargeDress, GiLaptop, GiDutchBike, GiFlowerPot, GiOldMicrophone, GiHealthPotion, GiCat, GiBearFace, GiFoodTruck, GiGearHammer } from 'react-icons/gi';
 
 const CategoriesDropdown = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -24,9 +25,39 @@ const CategoriesDropdown = () => {
                         style={{ width: "215px" }}
                         className="absolute right-0 mt-2 rounded shadow-lg bg-white ring-1 ring-black ring-opacity-5"
                     >
-                        <div className="py-2" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                        <div className="py-3" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                             <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex" role="menuitem">
-                                <GiAmpleDress style={{ fontSize: "20px", marginRight: "5px" }} /> hello world
+                                <GiLargeDress style={{ fontSize: "20px", marginRight: "7px" }} /> Fashions
+                            </a>
+                            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex" role="menuitem">
+                                <GiLaptop style={{ fontSize: "20px", marginRight: "7px" }} /> Electronics
+                            </a>
+                            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex" role="menuitem">
+                                <GiDutchBike style={{ fontSize: "20px", marginRight: "7px" }} /> Bikes
+                            </a>
+                            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex" role="menuitem">
+                                <GiFlowerPot style={{ fontSize: "20px", marginRight: "7px" }} /> Home & Garden
+                            </a>
+                            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex" role="menuitem">
+                                <AiOutlineGift style={{ fontSize: "20px", marginRight: "7px" }} /> Gifts
+                            </a>
+                            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex" role="menuitem">
+                                <GiOldMicrophone style={{ fontSize: "20px", marginRight: "7px" }} /> Musics
+                            </a>
+                            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex" role="menuitem">
+                                <GiHealthPotion style={{ fontSize: "20px", marginRight: "7px" }} /> Health & Beauty
+                            </a>
+                            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex" role="menuitem">
+                                <GiCat style={{ fontSize: "20px", marginRight: "7px" }} /> Pets
+                            </a>
+                            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex" role="menuitem">
+                                <GiBearFace style={{ fontSize: "20px", marginRight: "7px" }} /> Baby Toys
+                            </a>
+                            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex" role="menuitem">
+                                <GiFoodTruck style={{ fontSize: "20px", marginRight: "7px" }} /> Groceries
+                            </a>
+                            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex" role="menuitem">
+                                <GiGearHammer style={{ fontSize: "20px", marginRight: "7px" }} /> Automotive
                             </a>
                         </div>
                     </div>

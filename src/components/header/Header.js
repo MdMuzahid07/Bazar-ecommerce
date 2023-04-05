@@ -101,11 +101,8 @@ const Header = () => {
                                         <p>25% Discount for first order, Delivery charged free for every 200$ spend</p>
                                     </marquee>
                                 </div>
-
                                 <div>
-                                    <ul
-                                        className="flex items-center gap-10 justify-between my-2 text-sm"
-                                    >
+                                    <ul className="flex items-center gap-10 justify-between my-2 text-sm">
                                         <li>Home</li>
                                         <li>
                                             {/* user account nav link dropdown component */}
