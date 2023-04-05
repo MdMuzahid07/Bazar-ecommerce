@@ -1,7 +1,9 @@
 import { AiOutlineTwitter, AiOutlineInstagram, AiOutlineSearch } from 'react-icons/ai';
 import { RiFacebookBoxFill } from 'react-icons/ri';
 import { BsPerson } from 'react-icons/bs';
+import { BiCategory } from 'react-icons/bi';
 import { MdOutlineShoppingBag } from 'react-icons/md';
+import { IoIosArrowForward } from 'react-icons/io';
 
 import Image from 'next/image';
 
@@ -10,7 +12,7 @@ const Header = () => {
     return (
         <header>
             {/* header top start here */}
-            <div className=" w-full" style={{ backgroundColor: "#2B3445" }}>
+            <section className=" w-full" style={{ backgroundColor: "#2B3445" }}>
                 <section className="max-w-6xl mx-auto">
                     <div className="flex justify-between items-center h-9">
                         <div>
@@ -32,10 +34,10 @@ const Header = () => {
                         </div>
                     </div>
                 </section>
-            </div>
+            </section>
             {/* header top end here */}
             {/* header searchbar start here */}
-            <div className=" bg-white">
+            <div className="bg-white">
                 <section className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-5 py-5">
                         <div className="col-span-1">
@@ -84,6 +86,31 @@ const Header = () => {
                 </section>
             </div>
             {/* header searchbar end here */}
+            {/* header categories section start here */}
+            <section className="bg-white">
+                <div className="max-w-6xl mx-auto h-11">
+                    <div className="grid grid-cols-5">
+                        <div className="col-span-1">
+                            <button
+                                className="flex justify-between items-center w-full h-9 p-3 bg-slate-50 border-none rounded"
+
+                            >
+                                <span className="flex items-center gap-2">
+                                    <BiCategory />
+                                    <span className="text-sm">Categories</span>
+                                </span>
+                                <IoIosArrowForward />
+                            </button>
+                        </div>
+                        <div className="col-span-4">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* header categories section end here */}
         </header>
     );
 };
