@@ -3,7 +3,7 @@ import { RiFacebookBoxFill } from 'react-icons/ri';
 import { BsPerson } from 'react-icons/bs';
 import { BiCategory } from 'react-icons/bi';
 import { MdOutlineShoppingBag } from 'react-icons/md';
-import { IoIosArrowForward } from 'react-icons/io';
+import { IoIosArrowForward, IoIosArrowDown } from 'react-icons/io';
 
 import Image from 'next/image';
 
@@ -89,7 +89,7 @@ const Header = () => {
             {/* header categories section start here */}
             <section className="bg-white">
                 <div className="max-w-6xl mx-auto h-11">
-                    <div className="grid grid-cols-5">
+                    <div className="grid grid-cols-5 gap-10">
                         <div className="col-span-1">
                             <button
                                 className="flex justify-between items-center w-full h-9 p-3 bg-slate-50 border-none rounded"
@@ -102,10 +102,21 @@ const Header = () => {
                                 <IoIosArrowForward />
                             </button>
                         </div>
-                        <div className="col-span-4">
-                            <ul>
-                                <li></li>
-                            </ul>
+                        <div className="col-span-2">
+                            <div>
+                                <ul
+                                    className="flex items-center justify-around my-2 text-sm"
+                                >
+                                    <li>Home</li>
+                                    <li className="flex items-center"><span className=" mr-2">User Account</span> <IoIosArrowDown /></li>
+                                    <li className="flex items-center"><span className=" mr-2">Vendor Account</span> <IoIosArrowDown /></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="col-span-2">
+                            <marquee>
+                                <p>25% Discount for first order, Delivery charged free for every 200$ spend</p>
+                            </marquee>
                         </div>
                     </div>
                 </div>
