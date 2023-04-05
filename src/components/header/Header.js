@@ -10,11 +10,11 @@ import CategoriesDropdown from './categoriesDropdown/CategoriesDropdown';
 
 const Header = () => {
     return (
-        <header className="px-3 lg:px-0">
+        <header>
             {/* header top start here */}
-            <section className=" w-full" style={{ backgroundColor: "#2B3445" }}>
+            <section className="w-full" style={{ backgroundColor: "#2B3445" }}>
                 <section className="max-w-6xl mx-auto">
-                    <div className="flex justify-between items-center h-9">
+                    <div className="flex justify-between items-center h-9 px-3 lg:px-0">
                         <div>
                             <p className="text-xs text-white"><span style={{ backgroundColor: "#D23F57" }} className="p-1 px-3 rounded-full font-bold mr-1">HOT</span> <span>Free Express Shipping</span></p>
                         </div>
@@ -39,15 +39,20 @@ const Header = () => {
             {/* header searchbar start here */}
             <div className="bg-white">
                 <section className="max-w-6xl mx-auto">
-                    <div className="grid grid-cols-5 py-5">
-                        <div className="col-span-1">
-                            <Image
-                                src="https://bazaar.ui-lib.com/assets/images/logo2.svg" alt="brand_logo"
-                                width={85}
-                                height={50}
-                            />
+                    <div className="grid grid-cols-5 py-5 px-3 lg:px-0">
+                        <div className="col-span-1 lg:flex lg:gap-3">
+                            <div className="hidden lg:block">
+                                <Image
+                                    src="https://bazaar.ui-lib.com/assets/images/logo2.svg" alt="brand_logo"
+                                    width={85}
+                                    height={50}
+                                />
+                            </div>
+                            <div className="hidden lg:block z-50">
+                                <CategoriesDropdown ></CategoriesDropdown>
+                            </div>
                         </div>
-                        <div className="col-span-3">
+                        <div className="col-span-3 sticky top-0 left-0 z-50">
                             <div className="block lg:hidden">
                                 <div className="flex items-center justify-center">
                                     <Image
@@ -103,12 +108,12 @@ const Header = () => {
             </div>
             {/* header searchbar end here */}
             {/* header categories section start here */}
-            <section className="bg-white">
+            <section className="bg-white hidden lg:block">
                 <div className="max-w-6xl mx-auto h-11">
                     <div className="grid grid-cols-5 gap-5">
                         <div className="col-span-1">
                             {/* this component for category button dropdown */}
-                            <CategoriesDropdown />
+                            <CategoriesDropdown >Categories</CategoriesDropdown>
                         </div>
                         <div className="col-span-4 py-2 w-full">
                             <div className="flex justify-between items-center">

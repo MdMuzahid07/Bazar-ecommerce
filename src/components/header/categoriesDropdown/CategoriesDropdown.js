@@ -4,7 +4,7 @@ import { BiCategory } from 'react-icons/bi';
 import { AiOutlineGift } from 'react-icons/ai';
 import { GiAmpleDress, GiLargeDress, GiLaptop, GiDutchBike, GiFlowerPot, GiOldMicrophone, GiHealthPotion, GiCat, GiBearFace, GiFoodTruck, GiGearHammer } from 'react-icons/gi';
 
-const CategoriesDropdown = () => {
+const CategoriesDropdown = ({ children }) => {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
@@ -16,7 +16,7 @@ const CategoriesDropdown = () => {
                 >
                     <span className="flex items-center gap-2">
                         <BiCategory />
-                        <span className="text-sm">Categories</span>
+                        <span className="text-sm">{children}</span>
                     </span>
                     <IoIosArrowForward />
                 </button>
