@@ -10,7 +10,7 @@ import CategoriesDropdown from './categoriesDropdown/CategoriesDropdown';
 
 const Header = () => {
     return (
-        <header>
+        <header className="px-3 lg:px-0">
             {/* header top start here */}
             <section className=" w-full" style={{ backgroundColor: "#2B3445" }}>
                 <section className="max-w-6xl mx-auto">
@@ -48,36 +48,52 @@ const Header = () => {
                             />
                         </div>
                         <div className="col-span-3">
-                            <div className="flex items-center relative">
-                                <AiOutlineSearch className="absolute ml-3" style={{ fontSize: "17px" }} />
-                                <input
-                                    style={{ borderRadius: "5rem 0rem 0rem 5rem", width: "900px" }}
-                                    className="border h-10 pl-10" type="text" placeholder="Searching for..."
-                                />
-                                <div>
-                                    <select
-                                        style={{ borderRadius: "0rem 5rem 5rem 0rem", borderLeft: "none", }}
-                                        className="h-10 border bg-slate-50 text-sm px-5"
-                                    >
-                                        <option selected value="option1">All Categories</option>
-                                        <option value="option1">Car</option>
-                                        <option value="option2">Cloths</option>
-                                        <option value="option2">Electronics</option>
-                                        <option value="option2">Laptop</option>
-                                        <option value="option2">Desktops</option>
-                                        <option value="option2">Camera</option>
-                                        <option value="option2">Toys</option>
-                                    </select>
+                            <div className="block lg:hidden">
+                                <div className="flex items-center justify-center">
+                                    <Image
+                                        src="https://bazaar.ui-lib.com/assets/images/logo2.svg" alt="brand_logo"
+                                        width={85}
+                                        height={50}
+                                    />
+                                </div>
+                            </div>
+                            <div className="hidden lg:block">
+                                <div className="flex items-center relative">
+                                    <AiOutlineSearch className="absolute ml-3" style={{ fontSize: "17px" }} />
+                                    <input
+                                        style={{ borderRadius: "5rem 0rem 0rem 5rem", width: "900px" }}
+                                        className="border h-10 pl-10" type="text" placeholder="Searching for..."
+                                    />
+                                    <div>
+                                        <select
+                                            style={{ borderRadius: "0rem 5rem 5rem 0rem", borderLeft: "none", }}
+                                            className="h-10 border bg-slate-50 text-sm px-5"
+                                        >
+                                            <option selected value="option1">All Categories</option>
+                                            <option value="option1">Car</option>
+                                            <option value="option2">Cloths</option>
+                                            <option value="option2">Electronics</option>
+                                            <option value="option2">Laptop</option>
+                                            <option value="option2">Desktops</option>
+                                            <option value="option2">Camera</option>
+                                            <option value="option2">Toys</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div className="cols-span-1">
-                            <div className="flex justify-end gap-3">
-                                <span className="bg-slate-100 rounded-full p-2">
+                            <div className="flex justify-end lg:gap-3">
+                                <div>
+                                    <span className=" p-2 block lg:hidden">
+                                        <AiOutlineSearch style={{ fontSize: "20px" }} />
+                                    </span>
+                                </div>
+                                <span className="lg:bg-slate-100 rounded-full p-2">
                                     <BsPerson style={{ fontSize: "20px" }} />
                                 </span>
-                                <span className="bg-slate-100 rounded-full p-2 relative">
-                                    <span className="absolute -top-2 -right-2 bg-red-500 w-4 h-4 rounded-full text-xs text-white text-center">10</span>
+                                <span className="lg:bg-slate-100 rounded-full p-2 relative">
+                                    <span className="absolute top-0 right-0 lg:-top-2 lg:-right-2 bg-red-500 w-4 h-4 rounded-full text-xs text-white text-center">10</span>
                                     <MdOutlineShoppingBag style={{ fontSize: "20px" }} />
                                 </span>
                             </div>
