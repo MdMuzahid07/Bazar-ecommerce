@@ -1,13 +1,11 @@
 import { AiOutlineTwitter, AiOutlineInstagram, AiOutlineSearch } from 'react-icons/ai';
 import { RiFacebookBoxFill } from 'react-icons/ri';
 import { BsPerson } from 'react-icons/bs';
-import { BiCategory } from 'react-icons/bi';
 import { MdOutlineShoppingBag } from 'react-icons/md';
-import { IoIosArrowForward, IoIosArrowDown } from 'react-icons/io';
-
 import Image from 'next/image';
 import UserAccountDropdown from './UserAccountDropdown';
 import VendorAccountDropdown from './VendorAccountDropdown';
+import CategoriesDropdown from './CategoriesDropdown';
 
 
 const Header = () => {
@@ -93,16 +91,8 @@ const Header = () => {
                 <div className="max-w-6xl mx-auto h-11">
                     <div className="grid grid-cols-5 gap-5">
                         <div className="col-span-1">
-                            <button
-                                className="flex justify-between items-center w-full h-9 p-3 bg-slate-50 border-none rounded"
-
-                            >
-                                <span className="flex items-center gap-2">
-                                    <BiCategory />
-                                    <span className="text-sm">Categories</span>
-                                </span>
-                                <IoIosArrowForward />
-                            </button>
+                            {/* this component for category button dropdowon */}
+                            <CategoriesDropdown />
                         </div>
                         <div className="col-span-2 py-2">
                             <marquee>
