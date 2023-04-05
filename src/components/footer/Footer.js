@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaFacebookF } from 'react-icons/fa';
+import { FaFacebookF, FaGooglePlay, FaAppStoreIos } from 'react-icons/fa';
 import { CgTwitter } from 'react-icons/cg';
 import { AiOutlineYoutube, AiOutlineGoogle, AiOutlineInstagram } from 'react-icons/ai';
 
@@ -21,12 +21,28 @@ const Footer = () => {
                                 </p>
 
                             </div>
-                            <div>
+                            <div className="flex gap-5 mt-2">
                                 <button >
-
+                                    <div className="flex items-center gap-2 border px-3 py-1 rounded">
+                                        <div>
+                                            <FaGooglePlay style={{ fontSize: "20px" }} />
+                                        </div>
+                                        <dir className="text-left leading-3	">
+                                            <p><small>Get it on</small></p>
+                                            <p className="font-bold text-xs">Google Play</p>
+                                        </dir>
+                                    </div>
                                 </button>
-                                <button>
-                                    <img src="" alt="" />
+                                <button >
+                                    <div className="flex items-center gap-2 border px-3 py-1 rounded">
+                                        <div>
+                                            <FaAppStoreIos style={{ fontSize: "23px" }} />
+                                        </div>
+                                        <dir className="text-left leading-3	">
+                                            <p><small>Get it on</small></p>
+                                            <p className="font-bold text-xs">App Store</p>
+                                        </dir>
+                                    </div>
                                 </button>
                             </div>
                         </div>
