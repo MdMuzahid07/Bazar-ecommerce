@@ -5,7 +5,7 @@ import { MdOutlineShoppingBag } from 'react-icons/md';
 import Image from 'next/image';
 import UserAccountDropdown from './UserAccountDropdown';
 import VendorAccountDropdown from './VendorAccountDropdown';
-import CategoriesDropdown from './CategoriesDropdown';
+import CategoriesDropdown from './categoriesDropdown/CategoriesDropdown';
 
 
 const Header = () => {
@@ -91,29 +91,32 @@ const Header = () => {
                 <div className="max-w-6xl mx-auto h-11">
                     <div className="grid grid-cols-5 gap-5">
                         <div className="col-span-1">
-                            {/* this component for category button dropdowon */}
+                            {/* this component for category button dropdown */}
                             <CategoriesDropdown />
                         </div>
-                        <div className="col-span-2 py-2">
-                            <marquee>
-                                <p>25% Discount for first order, Delivery charged free for every 200$ spend</p>
-                            </marquee>
-                        </div>
-                        <div className="col-span-2">
-                            <div>
-                                <ul
-                                    className="flex items-center gap-10 justify-between my-2 text-sm"
-                                >
-                                    <li>Home</li>
-                                    <li>
-                                        {/* user account nav link dropdown component */}
-                                        <UserAccountDropdown />
-                                    </li>
-                                    <li>
-                                        {/* vendor account nav link dropdown component */}
-                                        <VendorAccountDropdown />
-                                    </li>
-                                </ul>
+                        <div className="col-span-4 py-2 w-full">
+                            <div className="flex justify-between items-center">
+                                <div>
+                                    <marquee>
+                                        <p>25% Discount for first order, Delivery charged free for every 200$ spend</p>
+                                    </marquee>
+                                </div>
+
+                                <div>
+                                    <ul
+                                        className="flex items-center gap-10 justify-between my-2 text-sm"
+                                    >
+                                        <li>Home</li>
+                                        <li>
+                                            {/* user account nav link dropdown component */}
+                                            <UserAccountDropdown />
+                                        </li>
+                                        <li>
+                                            {/* vendor account nav link dropdown component */}
+                                            <VendorAccountDropdown />
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
