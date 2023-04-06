@@ -12,10 +12,10 @@ const Main = () => {
                 {/* header slider section start here =====================>*/}
 
                 <section className="grid grid-cols-1 lg:grid-cols-7 gap-4 px-3 lg:px-0">
-                    <div className="col-span-5">
+                    <div className="lg:col-span-5">
                         <LandingPageHeaderSlider />
                     </div>
-                    <div className="col-span-2">
+                    <div className="lg:col-span-2">
                         <aside>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
 
@@ -49,7 +49,7 @@ const Main = () => {
                 <section className="bg-white mt-8 mb-14 p-7">
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
                         <dir>
-                            <div className="flex items-center justify-center md:border-r">
+                            <div className="flex items-center lg:justify-center md:border-r">
                                 <div>
                                     <TbTruckDelivery style={{ fontSize: "36px", marginRight: "10px" }} />
                                 </div>
@@ -60,7 +60,7 @@ const Main = () => {
                             </div>
                         </dir>
                         <dir>
-                            <div className="flex items-center justify-center md:border-r">
+                            <div className="flex items-center lg:justify-center lg:border-r">
                                 <div>
                                     <BsPiggyBank style={{ fontSize: "36px", marginRight: "10px" }} />
                                 </div>
@@ -71,7 +71,7 @@ const Main = () => {
                             </div>
                         </dir>
                         <dir>
-                            <div className="flex items-center justify-center lg:border-r">
+                            <div className="flex items-center lg:justify-center md:border-r">
                                 <div>
                                     <BsStopwatch style={{ fontSize: "36px", marginRight: "10px" }} />
                                 </div>
@@ -82,7 +82,7 @@ const Main = () => {
                             </div>
                         </dir>
                         <dir>
-                            <div className="flex items-center justify-center">
+                            <div className="flex items-center lg:justify-center">
                                 <div>
                                     <BsCardChecklist style={{ fontSize: "36px", marginRight: "10px" }} />
                                 </div>
