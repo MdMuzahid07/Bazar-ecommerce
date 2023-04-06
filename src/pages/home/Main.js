@@ -201,7 +201,7 @@ const Main = () => {
                 {/* three card banner section start here====================> */}
 
                 <section className="mb-16">
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 px-3 lg:px-0">
 
                         <div className="bg-[url('https://bazaar.ui-lib.com/assets/images/banners/banner-18.jpg')] bg-no-repeat bg-cover bg-right lg:px-7 lg:py-5 py-28 px-14">
                             <div>
@@ -239,8 +239,21 @@ const Main = () => {
                     </div>
                 </section>
 
-                {/* three card banner section end here====================> */}
 
+                {/* electronic aside slider section end here====================> */}
+
+                <section className="px-3 lg:px-0 mb-16">
+                    <div className="grid grid-cols-1 lg:grid-cols-7 gap-4">
+                        <div className="lg:col-span-2">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci non rerum ullam est quas officia quia fuga corrupti ex provident.
+                        </div>
+                        <div className="lg:col-span-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident voluptatibus in tempora itaque. Aut assumenda, culpa deserunt sit nostrum eveniet saepe fuga dolores temporibus. Voluptate, saepe quasi vitae nostrum corrupti, explicabo error aspernatur ut a quaerat, soluta nobis illum sunt provident in ipsam blanditiis tempore quisquam maiores quam aut ad quas quos. Ipsa at et perspiciatis ex rerum explicabo voluptatibus. Sint pariatur qui, est quos numquam odio esse aperiam accusamus, sit nulla tempore in voluptas eaque magni rerum mollitia repellat odit incidunt magnam soluta nihil fuga porro beatae. Alias, non nemo. Fuga dignissimos tenetur non quasi! Dignissimos, omnis ab.
+                        </div>
+                    </div>
+                </section>
+
+                {/* electronic aside slider section end here====================> */}
 
             </div >
         </section >
