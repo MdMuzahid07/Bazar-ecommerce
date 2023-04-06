@@ -2,6 +2,7 @@ import React from 'react';
 import { BsArrowRight, BsPiggyBank, BsStopwatch, BsCardChecklist } from 'react-icons/bs';
 import { TbTruckDelivery } from 'react-icons/tb';
 import LandingPageHeaderSlider from './headerSliderSection/LandingPageHeaderSlider';
+import DealsOfTheDay from './DealsOfTheDaySlider/DealsOfTheDay';
 
 const Main = () => {
     return (
@@ -146,14 +147,20 @@ const Main = () => {
                 </section>
                 {/* product category section end here ===================>*/}
 
+
                 {/* black friday sale banner section start here====================> */}
                 <section className="pb-16">
                     <div
-                        style={{ background: "#434343" }}
+                        style={{
+                            background: "#434343"
+                        }}
                     >
                         <div>
                             <div className="grid md:grid-cols-6">
-                                <div className="col-span-1 md:col-span-2 p-5 flex items-center " style={{ background: "#E0E0E0" }}>
+                                <div
+                                    className="col-span-1 md:col-span-2 p-5 flex items-center " style={{
+                                        background: "#E0E0E0",
+                                    }}>
                                     <h2 className="text-3xl font-bold">BLACK FRIDAY SALE!</h2>
                                 </div>
                                 <div className="col-span-1 md:col-span-4 p-1">
@@ -175,8 +182,21 @@ const Main = () => {
                 </section>
                 {/* black friday sale banner section end here====================> */}
 
-            </div>
-        </section>
+
+                {/* deals of the day section start here====================> */}
+
+
+                <section className="mb-16">
+                    <h1 className="text-lg font-bold">Deals Of The Day</h1>
+                    <div>
+                        <DealsOfTheDay />
+                    </div>
+                </section>
+
+                {/* deals of the day section end here====================> */}
+
+            </div >
+        </section >
     );
 };
 

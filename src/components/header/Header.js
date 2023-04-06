@@ -123,12 +123,7 @@ const Header = ({ toggleSidebarCart, handleOpenModal, toggleSidebarNav, toggleMo
                             <CategoriesDropdown >Categories</CategoriesDropdown>
                         </div>
                         <div className="col-span-4 py-2 w-full">
-                            <div className="flex justify-between items-center">
-                                <div>
-                                    <marquee behavior="scroll" direction="left">
-                                        <p className="text-red-500 font-bold">25% Discount for first order, Delivery charged free for every 200$ spend</p>
-                                    </marquee>
-                                </div>
+                            <div className="flex justify-end items-center">
                                 <div>
                                     <ul className="flex items-center gap-10 justify-between my-2 text-sm">
                                         <li>Home</li>
