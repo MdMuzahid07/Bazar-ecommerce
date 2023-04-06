@@ -1,10 +1,17 @@
 import React from 'react';
-import { AiOutlineStar } from 'react-icons/ai';
+import { AiOutlineStar, AiOutlineEye, AiOutlineHeart } from 'react-icons/ai';
+import styles from "../../../styles/SliderProductCard.module.css";
 
 const SliderProductCard = () => {
     return (
-        <div className="bg-white rounded">
-            <img className="w-full" src="https://bazaar.ui-lib.com/_next/image?url=%2Fassets%2Fimages%2Fproducts%2FFashion%2FClothes%2F1.SilverHighNeckSweater.png&w=1920&q=75" alt="" />
+        <div className={`bg-white rounded border border-white hover:border hover:border-black relative ${styles.productCard}`}>
+            <div className={`absolute top-5 right-4 hidden  animate__animated animate__backInRight ${styles.viewHeartIcon}`}>
+                <AiOutlineEye className="mb-3 text-slate-400" />
+                <AiOutlineHeart className="text-slate-400" />
+            </div>
+            <div>
+                <img className={`w-full ${styles.cardImgZoom}`} src="https://bazaar.ui-lib.com/_next/image?url=%2Fassets%2Fimages%2Fproducts%2FFashion%2FClothes%2F1.SilverHighNeckSweater.png&w=1920&q=75" alt="productImg" />
+            </div>
             <div className="p-5">
                 <div className="text-center">
                     <h1 className="text-sm">Silver High Neck Sweater</h1>

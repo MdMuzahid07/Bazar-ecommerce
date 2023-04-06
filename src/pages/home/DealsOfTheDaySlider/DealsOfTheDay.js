@@ -34,9 +34,6 @@ const DealsOfTheDay = () => {
                 modules={[Navigation]}
                 className="mySwiper"
             >
-                <SwiperSlide>
-                    <SliderProductCard />
-                </SwiperSlide>
 
                 <SwiperSlide>
                     <SliderProductCard />
@@ -61,6 +58,15 @@ const DealsOfTheDay = () => {
                 <SwiperSlide>
                     <SliderProductCard />
                 </SwiperSlide>
+
+                <SwiperSlide>
+                    <SliderProductCard />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <SliderProductCard />
+                </SwiperSlide>
+
             </Swiper>
         </section>
     );
