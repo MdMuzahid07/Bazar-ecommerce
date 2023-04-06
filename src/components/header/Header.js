@@ -118,15 +118,15 @@ const Header = ({ toggleSidebarCart, handleOpenModal, toggleSidebarNav, toggleMo
             <section className="bg-white hidden lg:block">
                 <div className="max-w-6xl mx-auto h-11">
                     <div className="grid grid-cols-5 gap-5">
-                        <div className="col-span-1">
+                        <div className="col-span-1 z-50">
                             {/* this component for category button dropdown */}
                             <CategoriesDropdown >Categories</CategoriesDropdown>
                         </div>
                         <div className="col-span-4 py-2 w-full">
                             <div className="flex justify-between items-center">
                                 <div>
-                                    <marquee>
-                                        <p>25% Discount for first order, Delivery charged free for every 200$ spend</p>
+                                    <marquee behavior="scroll" direction="left">
+                                        <p className="text-red-500 font-bold">25% Discount for first order, Delivery charged free for every 200$ spend</p>
                                     </marquee>
                                 </div>
                                 <div>

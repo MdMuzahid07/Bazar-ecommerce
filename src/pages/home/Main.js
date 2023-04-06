@@ -146,6 +146,35 @@ const Main = () => {
                 </section>
                 {/* product category section end here ===================>*/}
 
+                {/* black friday sale banner section start here====================> */}
+                <section className="pb-16">
+                    <div
+                        style={{ background: "#434343" }}
+                    >
+                        <div>
+                            <div className="grid md:grid-cols-6">
+                                <div className="col-span-1 md:col-span-2 p-5 flex items-center " style={{ background: "#E0E0E0" }}>
+                                    <h2 className="text-3xl font-bold">BLACK FRIDAY SALE!</h2>
+                                </div>
+                                <div className="col-span-1 md:col-span-4 p-1">
+                                    <div className="border border-dotted  p-5 flex items-center justify-between gap-3 w-full">
+                                        <div>
+                                            <marquee behavior="scroll" direction="left">
+                                                <p className="text-2xl text-white  italic">PAY ONLY FOR <span className="font-bold">YOUR LOVING ELECTRONICS</span>
+                                                </p>
+                                            </marquee>
+                                        </div>
+                                        <div style={{ background: "#E0E0E0" }}>
+                                            <button className="bg-black text-white px-5 py-2">Shop Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                {/* black friday sale banner section end here====================> */}
+
             </div>
         </section>
     );
