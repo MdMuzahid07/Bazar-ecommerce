@@ -8,7 +8,7 @@ import VendorAccountDropdown from './VendorAccountDropdown';
 import CategoriesDropdown from './categoriesDropdown/CategoriesDropdown';
 
 
-const Header = () => {
+const Header = ({ toggleSidebarCart }) => {
     return (
         <header>
             {/* header top start here */}
@@ -97,10 +97,10 @@ const Header = () => {
                                 <span className="lg:bg-slate-100 rounded-full p-2">
                                     <BsPerson style={{ fontSize: "20px" }} />
                                 </span>
-                                <span className="lg:bg-slate-100 rounded-full p-2 relative">
+                                <button onClick={toggleSidebarCart} className="lg:bg-slate-100 rounded-full p-2 relative">
                                     <span className="absolute top-0 right-0 lg:-top-2 lg:-right-2 bg-red-500 w-4 h-4 rounded-full text-xs text-white text-center">10</span>
                                     <MdOutlineShoppingBag style={{ fontSize: "20px" }} />
-                                </span>
+                                </button>
                             </div>
                         </div>
                     </div>
