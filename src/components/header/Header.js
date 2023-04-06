@@ -9,7 +9,7 @@ import VendorAccountDropdown from './VendorAccountDropdown';
 import CategoriesDropdown from './categoriesDropdown/CategoriesDropdown';
 
 
-const Header = ({ toggleSidebarCart, handleOpenModal, toggleSidebarNav }) => {
+const Header = ({ toggleSidebarCart, handleOpenModal, toggleSidebarNav, toggleMobileSearchDropdown }) => {
     return (
         <header>
             {/* header top start here */}
@@ -96,9 +96,9 @@ const Header = ({ toggleSidebarCart, handleOpenModal, toggleSidebarNav }) => {
                         <div className="cols-span-1">
                             <div className="flex justify-end lg:gap-3">
                                 <div>
-                                    <span className=" p-2 block lg:hidden">
+                                    <button onClick={toggleMobileSearchDropdown} className=" p-2 block lg:hidden">
                                         <AiOutlineSearch style={{ fontSize: "20px" }} />
-                                    </span>
+                                    </button>
                                 </div>
                                 <button onClick={handleOpenModal} className="lg:bg-slate-100 rounded-full p-2">
                                     <BsPerson style={{ fontSize: "20px" }} />
