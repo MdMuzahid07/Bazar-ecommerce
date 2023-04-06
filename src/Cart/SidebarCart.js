@@ -4,6 +4,16 @@ import ProductCartCard from './ProductCartCard';
 import 'animate.css';
 
 const SidebarCart = ({ isCartOpen, toggleSidebarCart }) => {
+
+    // dummy product info
+    const product = [
+        { _id: "igb059df7v58", img: "https://bazaar.ui-lib.com/assets/images/products/Fashion/Clothes/1.SilverHighNeckSweater.png", name: "Sliver High Neck Swi...", price: "210" },
+        { _id: "igb059av58", img: "https://bazaar.ui-lib.com/assets/images/products/Fashion/Clothes/1.SilverHighNeckSweater.png", name: "Sliver High Neck Swi...", price: "210" },
+        { _id: "igb0523497v58", img: "https://bazaar.ui-lib.com/assets/images/products/Fashion/Clothes/1.SilverHighNeckSweater.png", name: "Sliver High Neck Swi...", price: "210" },
+        { _id: "igb05927v58", img: "https://bazaar.ui-lib.com/assets/images/products/Fashion/Clothes/1.SilverHighNeckSweater.png", name: "Sliver High Neck Swi...", price: "210" },
+        { _id: "igb059dgy7v58", img: "https://bazaar.ui-lib.com/assets/images/products/Fashion/Clothes/1.SilverHighNeckSweater.png", name: "Sliver High Neck Swi...", price: "210" }
+    ];
+
     return (
         <section className="min-h-screen w-full lg:w-72 xl:w-96 bg-white drop-shadow fixed top-0 right-0 z-50 p-7 animate__animated animate__slideInRight">
             <div className="flex items-center justify-between mb-3">
@@ -12,9 +22,9 @@ const SidebarCart = ({ isCartOpen, toggleSidebarCart }) => {
             </div>
             <hr />
             <div className="mt-2">
-                <ProductCartCard />
-                <ProductCartCard />
-                <ProductCartCard />
+                {
+                    product?.map((product) => <ProductCartCard key={product._id} product={product} />)
+                }
             </div>
             <div>
                 <div className="absolute bottom-0">
