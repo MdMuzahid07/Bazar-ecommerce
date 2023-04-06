@@ -1,5 +1,6 @@
 import React from 'react';
-import { BsArrowRight } from 'react-icons/bs';
+import { BsArrowRight, BsPiggyBank, BsStopwatch, BsCardChecklist } from 'react-icons/bs';
+import { TbTruckDelivery } from 'react-icons/tb';
 import LandingPageHeaderSlider from './headerSliderSection/LandingPageHeaderSlider';
 
 const Main = () => {
@@ -41,14 +42,61 @@ const Main = () => {
                     </div>
                 </section>
 
+                {/* header slider section end here ===================>*/}
 
-                <section className="min-h-screen w-full">
+                {/* fun fact section start here ===================>*/}
 
+                <section className="bg-white mt-8 mb-14 p-7">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+                        <dir>
+                            <div className="flex items-center justify-center md:border-r">
+                                <div>
+                                    <TbTruckDelivery style={{ fontSize: "36px", marginRight: "10px" }} />
+                                </div>
+                                <div>
+                                    <h5 className="text-base leading-4">Fast Delivery</h5>
+                                    <p className="text-sm leading-4"><small>Start from $10</small></p>
+                                </div>
+                            </div>
+                        </dir>
+                        <dir>
+                            <div className="flex items-center justify-center md:border-r">
+                                <div>
+                                    <BsPiggyBank style={{ fontSize: "36px", marginRight: "10px" }} />
+                                </div>
+                                <div>
+                                    <h5 className="text-base leading-4">Money Guarantee</h5>
+                                    <p className="text-sm leading-4"><small>7 days back</small></p>
+                                </div>
+                            </div>
+                        </dir>
+                        <dir>
+                            <div className="flex items-center justify-center lg:border-r">
+                                <div>
+                                    <BsStopwatch style={{ fontSize: "36px", marginRight: "10px" }} />
+                                </div>
+                                <div>
+                                    <h5 className="text-base leading-4">365 Days</h5>
+                                    <p className="text-sm leading-4"><small>For free return</small></p>
+                                </div>
+                            </div>
+                        </dir>
+                        <dir>
+                            <div className="flex items-center justify-center">
+                                <div>
+                                    <BsCardChecklist style={{ fontSize: "36px", marginRight: "10px" }} />
+                                </div>
+                                <div>
+                                    <h5 className="text-base leading-4">Payment</h5>
+                                    <p className="text-sm leading-4"><small> secure System</small></p>
+                                </div>
+                            </div>
+                        </dir>
+                    </div>
                 </section>
 
+                {/* fun fact section end here ===================>*/}
 
-
-                {/* header slider section end here ===================>*/}
 
             </div>
         </section>
