@@ -1,6 +1,7 @@
 import React from 'react';
 import { BsArrowRight, BsPiggyBank, BsStopwatch, BsCardChecklist } from 'react-icons/bs';
 import { TbTruckDelivery } from 'react-icons/tb';
+import { HiOutlineArrowSmRight } from 'react-icons/hi';
 import LandingPageHeaderSlider from './headerSliderSection/LandingPageHeaderSlider';
 import DealsOfTheDay from './DealsOfTheDaySlider/DealsOfTheDay';
 
@@ -194,6 +195,52 @@ const Main = () => {
                 </section>
 
                 {/* deals of the day section end here====================> */}
+
+
+
+                {/* three card banner section start here====================> */}
+
+                <section className="mb-16">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+
+                        <div className="bg-[url('https://bazaar.ui-lib.com/assets/images/banners/banner-18.jpg')] bg-no-repeat bg-cover bg-right lg:px-7 lg:py-5 py-28 px-14">
+                            <div>
+                                <h2 className="mb-4 text-lg lg:text-sm">NEW ARRIVALS</h2>
+                                <div>
+                                    <h3 className="text-xl font-bold">SKI CLOTHES SALE</h3>
+                                    <h3 className="text-xl text-red-500">Up to 35% Off</h3>
+                                </div>
+                                <button className="flex items-center border-b border-b-2 hover:border-b-2 hover:border-black transition delay-200 mt-5">Shop Now <HiOutlineArrowSmRight className="ml-3" /></button>
+                            </div>
+                        </div>
+
+                        <div className="bg-[url('https://bazaar.ui-lib.com/assets/images/banners/banner-19.jpg')] bg-no-repeat bg-cover bg-right lg:px-7 lg:py-5 py-28 px-14 text-white">
+                            <div>
+                                <h2 className="mb-4 text-lg lg:text-sm">BEST SELLER</h2>
+                                <div>
+                                    <h3 className="text-xl font-bold">TRENDING WOMEN</h3>
+                                    <h3 className="text-xl">SUNGLASSES</h3>
+                                </div>
+                                <button className="flex items-center border-b border-black border-b-2 hover:border-b-2 hover:border-white transition delay-200 mt-5">Shop Now <HiOutlineArrowSmRight className="ml-3" /></button>
+                            </div>
+                        </div>
+
+                        <div className="bg-[url('https://bazaar.ui-lib.com/assets/images/banners/banner-20.jpg')] bg-no-repeat bg-cover bg-right lg:px-7 lg:py-5 py-28 px-14">
+                            <div>
+                                <h2 className="mb-4 text-lg lg:text-sm">NEW ARRIVALS</h2>
+                                <div>
+                                    <h3 className="text-xl font-bold">NEW LATEST BAG</h3>
+                                    <h3 className="text-xl">COLLECTION</h3>
+                                </div>
+                                <button className="flex items-center border-b border-b-2 hover:border-b-2 hover:border-black transition delay-200 mt-5">Shop Now <HiOutlineArrowSmRight className="ml-3" /></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                {/* three card banner section end here====================> */}
+
 
             </div >
         </section >

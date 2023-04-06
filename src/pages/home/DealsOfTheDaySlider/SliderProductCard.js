@@ -4,7 +4,7 @@ import styles from "../../../styles/SliderProductCard.module.css";
 
 const SliderProductCard = () => {
     return (
-        <div className={`bg-white rounded border border-white hover:border hover:border-black relative ${styles.productCard}`}>
+        <div className={`bg-white rounded border border-white hover:border hover:border-black transition duration-500 relative ${styles.productCard}`}>
             <div className={`absolute top-5 right-4 hidden  animate__animated animate__backInRight ${styles.viewHeartIcon}`}>
                 <AiOutlineEye className="mb-3 text-slate-400" />
                 <AiOutlineHeart className="text-slate-400" />

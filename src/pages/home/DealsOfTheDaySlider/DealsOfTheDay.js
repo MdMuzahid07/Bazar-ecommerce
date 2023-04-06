@@ -35,6 +35,7 @@ const DealsOfTheDay = () => {
                 className="mySwiper"
             >
 
+                {/* this card have a css file, called SliderProductCard.module.css */}
                 <SwiperSlide>
                     <SliderProductCard />
                 </SwiperSlide>
