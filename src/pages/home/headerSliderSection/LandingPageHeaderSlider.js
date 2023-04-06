@@ -57,7 +57,6 @@ const LandingPageHeaderSlider = () => {
                     </div>
                 </SwiperSlide>
 
-
                 <SwiperSlide>
                     <div className="rounded bg-gradient-to-r from-yellow-50 p-10 sm:p-20 md:p-24">
                         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-5">
@@ -76,6 +75,7 @@ const LandingPageHeaderSlider = () => {
                         </div>
                     </div>
                 </SwiperSlide>
+
             </Swiper>
         </>
     );

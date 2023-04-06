@@ -97,6 +97,54 @@ const Main = () => {
 
                 {/* fun fact section end here ===================>*/}
 
+                {/* product category section start here ===================>*/}
+                <section className="my-16">
+
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 px-3 lg:px-0">
+                        <div className="bg-white relative">
+                            <div className="flex items-center justify-center">
+                                <img src="https://bazaar.ui-lib.com/_next/image?url=%2Fassets%2Fimages%2Fcategories%2Fcat-1.jpg&w=1920&q=75" alt="categories_product" />
+                            </div>
+                            <button className="bg-slate-50 w-full text-black hover:bg-black hover:text-white absolute bottom-0 right-0 left-0 font-bold text-sm p-2">Toys</button>
+                        </div>
+
+                        <div className="bg-white relative">
+                            <div className="flex items-center justify-center">
+                                <img src="https://bazaar.ui-lib.com/_next/image?url=%2Fassets%2Fimages%2Fcategories%2Fcat-2.jpg&w=1920&q=75" alt="categories_product" />
+                            </div>
+                            <button className="bg-slate-50 w-full text-black hover:bg-black hover:text-white absolute bottom-0 right-0 left-0 font-bold text-sm p-2">Sports</button>
+                        </div>
+
+                        <div className="bg-white relative">
+                            <div className="flex items-center justify-center">
+                                <img src="https://bazaar.ui-lib.com/_next/image?url=%2Fassets%2Fimages%2Fcategories%2Fcat-3.jpg&w=1920&q=75" alt="categories_product" />
+                            </div>
+                            <button className="bg-slate-50 w-full text-black hover:bg-black hover:text-white absolute bottom-0 right-0 left-0 font-bold text-sm p-2">Gaming</button>
+                        </div>
+
+                        <div className="bg-white relative">
+                            <div className="flex items-center justify-center">
+                                <img src="https://bazaar.ui-lib.com/_next/image?url=%2Fassets%2Fimages%2Fcategories%2Fcat-4.jpg&w=1920&q=75" alt="categories_product" />
+                            </div>
+                            <button className="bg-slate-50 w-full text-black hover:bg-black hover:text-white absolute bottom-0 right-0 left-0 font-bold text-sm p-2">Furniture</button>
+                        </div>
+
+                        <div className="bg-white relative">
+                            <div className="flex items-center justify-center">
+                                <img src="https://bazaar.ui-lib.com/_next/image?url=%2Fassets%2Fimages%2Fcategories%2Fcat-5.jpg&w=1920&q=75" alt="categories_product" />
+                            </div>
+                            <button className="bg-slate-50 w-full text-black hover:bg-black hover:text-white absolute bottom-0 right-0 left-0 font-bold text-sm p-2">Fashion</button>
+                        </div>
+
+                        <div className="bg-white relative">
+                            <div className="flex items-center justify-center">
+                                <img src="https://bazaar.ui-lib.com/_next/image?url=%2Fassets%2Fimages%2Fcategories%2Fcat-6.jpg&w=1920&q=75" alt="categories_product" />
+                            </div>
+                            <button className="bg-slate-50 w-full text-black hover:bg-black hover:text-white absolute bottom-0 right-0 left-0 font-bold text-sm p-2">Cameras</button>
+                        </div>
+                    </div>
+                </section>
+                {/* product category section end here ===================>*/}
 
             </div>
         </section>
