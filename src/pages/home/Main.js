@@ -9,8 +9,22 @@ const Main = () => {
 
                 {/* header slider section start here =====================>*/}
 
-                <section>
-                    <LandingPageHeaderSlider />
+                <section className="grid grid-cols-1 lg:grid-cols-7 gap-3 px-3 lg:px-0">
+                    <div className="col-span-5">
+                        <LandingPageHeaderSlider />
+                    </div>
+                    <div className="col-span-2">
+                        <div>
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-3">
+                                <div>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, repudiandae.
+                                </div>
+                                <div>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, repudiandae.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
 
