@@ -8,7 +8,7 @@ import VendorAccountDropdown from './VendorAccountDropdown';
 import CategoriesDropdown from './categoriesDropdown/CategoriesDropdown';
 
 
-const Header = ({ toggleSidebarCart }) => {
+const Header = ({ toggleSidebarCart, handleOpenModal }) => {
     return (
         <header>
             {/* header top start here */}
@@ -94,9 +94,9 @@ const Header = ({ toggleSidebarCart }) => {
                                         <AiOutlineSearch style={{ fontSize: "20px" }} />
                                     </span>
                                 </div>
-                                <span className="lg:bg-slate-100 rounded-full p-2">
+                                <button onClick={handleOpenModal} className="lg:bg-slate-100 rounded-full p-2">
                                     <BsPerson style={{ fontSize: "20px" }} />
-                                </span>
+                                </button>
                                 <button onClick={toggleSidebarCart} className="lg:bg-slate-100 rounded-full p-2 relative">
                                     <span className="absolute top-0 right-0 lg:-top-2 lg:-right-2 bg-red-500 w-4 h-4 rounded-full text-xs text-white text-center">10</span>
                                     <MdOutlineShoppingBag style={{ fontSize: "20px" }} />
