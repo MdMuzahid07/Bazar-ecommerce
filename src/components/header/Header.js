@@ -1,6 +1,7 @@
 import { AiOutlineTwitter, AiOutlineInstagram, AiOutlineSearch } from 'react-icons/ai';
 import { RiFacebookBoxFill } from 'react-icons/ri';
 import { BsPerson } from 'react-icons/bs';
+import { AiOutlineMenu } from 'react-icons/ai';
 import { MdOutlineShoppingBag } from 'react-icons/md';
 import Image from 'next/image';
 import UserAccountDropdown from './UserAccountDropdown';
@@ -8,7 +9,7 @@ import VendorAccountDropdown from './VendorAccountDropdown';
 import CategoriesDropdown from './categoriesDropdown/CategoriesDropdown';
 
 
-const Header = ({ toggleSidebarCart, handleOpenModal }) => {
+const Header = ({ toggleSidebarCart, handleOpenModal, toggleSidebarNav }) => {
     return (
         <header>
             {/* header top start here */}
@@ -41,6 +42,11 @@ const Header = ({ toggleSidebarCart, handleOpenModal }) => {
                 <section className="max-w-6xl mx-auto">
                     <div className="grid grid-cols-5 py-5 px-3 lg:px-0">
                         <div className="col-span-1 lg:flex lg:gap-3">
+                            <div className="block lg:hidden py-2">
+                                <button onClick={toggleSidebarNav}>
+                                    <AiOutlineMenu style={{ fontSize: "25px" }} />
+                                </button>
+                            </div>
                             <div className="hidden lg:block">
                                 <Image
                                     src="https://bazaar.ui-lib.com/assets/images/logo2.svg" alt="brand_logo"

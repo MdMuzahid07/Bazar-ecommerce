@@ -1,0 +1,13 @@
+import React from 'react';
+
+const MobileSidebarNav = () => {
+    return (
+        <navbar className="min-h-screen w-full bg-white drop-shadow fixed top-0 left-0 z-50 p-5 animate__animated animate__slideInLeft">
+            <div>
+
+            </div>
+        </navbar>
+    );
+};
+
+export default MobileSidebarNav;
