@@ -6,7 +6,7 @@ const AccountCreateModalForm = ({ isOpen, handleOverlayClick, handleCloseModal }
                 className={`fixed inset-0 z-50 ${isOpen ? 'flex' : 'hidden'}`}
                 onClick={handleOverlayClick}
             >
-                <div className="relative m-auto max-w-lg overflow-auto bg-white rounded shadow-lg">
+                <div className="relative m-auto h-screen w-full md:w-96 md:h-96 overflow-auto bg-white md:rounded-lg shadow-lg">
                     <div className="absolute top-0 right-0 p-4">
                         <button onClick={handleCloseModal}>
                             <svg viewBox="0 0 20 20" fill="currentColor" className="w-6 h-6">

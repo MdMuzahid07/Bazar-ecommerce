@@ -54,9 +54,10 @@ const Header = ({ toggleSidebarCart, handleOpenModal, toggleSidebarNav, toggleMo
                                     height={50}
                                 />
                             </div>
-                            <div className="hidden lg:block z-50">
+                            {/* this this will show on page scrolling on a certain height */}
+                            {/* <div className="hidden lg:block z-50">
                                 <CategoriesDropdown ></CategoriesDropdown>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="col-span-3 sticky top-0 left-0 z-50">
                             <div className="block lg:hidden">
