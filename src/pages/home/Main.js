@@ -399,6 +399,20 @@ const Main = () => {
 
 
 
+                {/*  selected product section  start here====================> */}
+
+
+                <section className="px-3 lg:px-0 mb-16">
+                    <h2 className="mb-5 text-xl font-bold">Featured Brands</h2>
+                    <div>
+                        {/* reused component */}
+                        <DealsOfTheDay />
+                    </div>
+                </section>
+
+
+                {/*  selected product section  end here====================> */}
+
             </div >
         </section >
     );
