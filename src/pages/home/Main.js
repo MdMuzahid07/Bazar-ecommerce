@@ -273,6 +273,31 @@ const Main = () => {
 
                 {/* electronic aside slider section end here====================> */}
 
+
+                {/* clock two banner section start here====================> */}
+                <section className="px-3 lg:px-0 mb-16">
+                    <div className="grid md:grid-cols-2 gap-5">
+                        <div className="p-7 bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcKBm-sqIDZxNJX9E4sNV0U3I3Wx6EW6bXFQ&usqp=CAU')] bg-no-repeat bg-cover bg-right rounded">
+                            <div>
+                                <h2 className="text-lg">Final Reduction</h2>
+                                <h1 className="text-2xl font-bold">Sale up to 20% off</h1>
+                                <div className="border-b-2 border-black w-20 mt-3 mb-2"></div>
+                                <p>Only From <span className="text-xl font-bold text-red-500">$270.00</span></p>
+                            </div>
+                        </div>
+
+                        <div className="p-7 bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcKBm-sqIDZxNJX9E4sNV0U3I3Wx6EW6bXFQ&usqp=CAU')] bg-no-repeat bg-cover bg-right rounded">
+                            <div className="text-white">
+                                <h2 className="text-lg">Weekend Sale</h2>
+                                <h1 className="text-2xl font-bold">Fine Smart Speaker</h1>
+                                <div className="border-b-2 border-black w-20 mt-3 mb-2"></div>
+                                <p>Starting at <span className="text-xl font-bold text-red-500">$185.00</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                {/* clock two banner section end here====================> */}
+
             </div >
         </section >
     );
