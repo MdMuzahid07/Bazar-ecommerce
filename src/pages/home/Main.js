@@ -5,6 +5,7 @@ import { HiOutlineArrowSmRight } from 'react-icons/hi';
 import LandingPageHeaderSlider from './headerSliderSection/LandingPageHeaderSlider';
 import DealsOfTheDay from './DealsOfTheDaySlider/DealsOfTheDay';
 import ElectronicsAsideSectionSlider from './ElectronicsAsideSliderSection/ElectronicsAsideSectionSlider';
+import FeaturedBrandSlider from './featuredBrandsSlider/FeaturedBrandSlider';
 
 const Main = () => {
     return (
@@ -384,7 +385,18 @@ const Main = () => {
                     </div>
                 </section>
 
-                {/*  women's Fashion aside slider section start here====================> */}
+                {/*  Featured Brands section start here====================> */}
+
+                <section className="px-3 lg:px-0 mb-16">
+                    <h2 className="mb-5 text-xl font-bold">Featured Brands</h2>
+                    <div className="bg-white">
+                        <FeaturedBrandSlider />
+                    </div>
+                </section>
+
+                {/*  Featured Brands section start here====================> */}
+
+
 
             </div >
         </section >
