@@ -298,6 +298,41 @@ const Main = () => {
                 </section>
                 {/* clock two banner section end here====================> */}
 
+
+                {/* Man Fashion aside slider section start here====================> */}
+
+                <section className="px-3 lg:px-0 mb-16">
+                    <div className="grid grid-cols-1 lg:grid-cols-7 gap-4">
+                        <div className="lg:col-span-2">
+                            <div className="bg-white rounded px-7 py-5">
+                                <h2 className="text-2xl font-bold mb-4">{`Men's Fashion`}</h2>
+                                <div>
+                                    <ul>
+                                        <li className="mb-2"><a href=""><small>Wireless Speaker</small></a></li>
+                                        <li className="mb-2"><a href=""><small>Tablet</small></a></li>
+                                        <li className="mb-2"><a href=""><small>Smartphone</small></a></li>
+                                        <li className="mb-2"><a href=""><small>Laptop</small> </a></li>
+                                        <li className="mb-2"><a href=""><small>iMac</small></a></li>
+                                        <li className="mb-2"><a href=""><small>Game Controller</small> </a></li>
+                                        <li className="mb-2"><a href=""><small>Drone</small></a></li>
+                                        <li className="mb-2"><a href=""><small>Apple</small></a></li>
+                                    </ul>
+                                    <button className="flex items-center border-b border-b-2 hover:border-b-2 hover:border-black transition delay-200 mt-5 text-base">Browse All <HiOutlineArrowSmRight className="ml-3" /></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="lg:col-span-5">
+                            <div>
+                                <ElectronicsAsideSectionSlider />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Man Fashion aside slider section start here====================> */}
+
+
+
             </div >
         </section >
     );

@@ -10,7 +10,7 @@ const SliderSlideCard = () => {
                 <AiOutlineHeart className="text-slate-400" />
             </div>
             <div>
-                <img className={`w-full ${styles.cardImgZoom}`} src="https://bazaar.ui-lib.com/_next/image?url=%2Fassets%2Fimages%2Fproducts%2FFashion%2FClothes%2F21.YellowCasualSweater.png&w=1920&q=75" alt="productImg" />
+                <img className={`w-full ${styles.cardImgZoom}`} src="https://bazaar.ui-lib.com/_next/image?url=%2Fassets%2Fimages%2Fproducts%2FFashion%2FClothes%2F1.SilverHighNeckSweater.png&w=1920&q=75" alt="productImg" />
             </div>
             <div className="p-5">
                 <div className="text-center">
