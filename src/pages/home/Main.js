@@ -299,7 +299,7 @@ const Main = () => {
                 {/* clock two banner section end here====================> */}
 
 
-                {/* Man Fashion aside slider section start here====================> */}
+                {/* Man's Fashion aside slider section start here====================> */}
 
                 <section className="px-3 lg:px-0 mb-16">
                     <div className="grid grid-cols-1 lg:grid-cols-7 gap-4">
@@ -329,9 +329,27 @@ const Main = () => {
                     </div>
                 </section>
 
-                {/* Man Fashion aside slider section start here====================> */}
+                {/* Mans Fashion aside slider section start here====================> */}
+
+                {/* gift 50% off banner section start here====================> */}
 
 
+                <section className="px-3 lg:px-0 mb-16">
+                    <div className="px-7 py-10 bg-[url('https://rare-gallery.com/thumbs/1070535-black-monochrome-simple-background-abstract-texture-atmosphere-gray-fog-weather-line-atmospheric-phenomenon-black-and-white-monochrome-photography.jpg')] bg-no-repeat bg-cover bg-right rounded">
+                        <div className="flex items-center justify-center md:justify-end">
+                            <div className="md:flex items-center gap-5 md:gap-10">
+                                <div>
+                                    <h2 className="text-3xl font-bold">GIFT <span className="text-red-500">50% OFF</span> PERFECT STYLES</h2>
+                                    <p className="text-sm">Only until the end of this week. Terms and conditions apply</p>
+                                </div>
+                                <button className="px-9 py-3 bg-white text-black text-sm">Discover Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                {/* gift 50% off banner section start here====================> */}
 
             </div >
         </section >
