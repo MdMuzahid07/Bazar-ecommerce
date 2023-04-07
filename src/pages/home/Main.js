@@ -286,7 +286,7 @@ const Main = () => {
                             </div>
                         </div>
 
-                        <div className="p-7 bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcKBm-sqIDZxNJX9E4sNV0U3I3Wx6EW6bXFQ&usqp=CAU')] bg-no-repeat bg-cover bg-right rounded">
+                        <div className="p-7 bg-[url('https://rare-gallery.com/thumbs/1070535-black-monochrome-simple-background-abstract-texture-atmosphere-gray-fog-weather-line-atmospheric-phenomenon-black-and-white-monochrome-photography.jpg')] bg-no-repeat bg-cover bg-right rounded">
                             <div className="text-white">
                                 <h2 className="text-lg">Weekend Sale</h2>
                                 <h1 className="text-2xl font-bold">Fine Smart Speaker</h1>
@@ -331,6 +331,8 @@ const Main = () => {
 
                 {/* Mans Fashion aside slider section start here====================> */}
 
+
+
                 {/* gift 50% off banner section start here====================> */}
 
 
@@ -350,6 +352,39 @@ const Main = () => {
 
 
                 {/* gift 50% off banner section start here====================> */}
+
+
+                {/* women's Fashion aside slider section start here====================> */}
+
+                <section className="px-3 lg:px-0 mb-16">
+                    <div className="grid grid-cols-1 lg:grid-cols-7 gap-4">
+                        <div className="lg:col-span-2">
+                            <div className="bg-white rounded px-7 py-5">
+                                <h2 className="text-2xl font-bold mb-4">{`Women's Fashion`}</h2>
+                                <div>
+                                    <ul>
+                                        <li className="mb-2"><a href=""><small>Wireless Speaker</small></a></li>
+                                        <li className="mb-2"><a href=""><small>Tablet</small></a></li>
+                                        <li className="mb-2"><a href=""><small>Smartphone</small></a></li>
+                                        <li className="mb-2"><a href=""><small>Laptop</small> </a></li>
+                                        <li className="mb-2"><a href=""><small>iMac</small></a></li>
+                                        <li className="mb-2"><a href=""><small>Game Controller</small> </a></li>
+                                        <li className="mb-2"><a href=""><small>Drone</small></a></li>
+                                        <li className="mb-2"><a href=""><small>Apple</small></a></li>
+                                    </ul>
+                                    <button className="flex items-center border-b border-b-2 hover:border-b-2 hover:border-black transition delay-200 mt-5 text-base">Browse All <HiOutlineArrowSmRight className="ml-3" /></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="lg:col-span-5">
+                            <div>
+                                <ElectronicsAsideSectionSlider />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/*  women's Fashion aside slider section start here====================> */}
 
             </div >
         </section >
