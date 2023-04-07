@@ -245,7 +245,22 @@ const Main = () => {
                 <section className="px-3 lg:px-0 mb-16">
                     <div className="grid grid-cols-1 lg:grid-cols-7 gap-4">
                         <div className="lg:col-span-2">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci non rerum ullam est quas officia quia fuga corrupti ex provident.
+                            <div className="bg-white rounded px-7 py-5">
+                                <h2 className="text-2xl font-bold mb-5">Electronic</h2>
+                                <div>
+                                    <ul>
+                                        <li className="mb-3"><a href=""><small>Wireless Speaker</small></a></li>
+                                        <li className="mb-3"><a href=""><small>Tablet</small></a></li>
+                                        <li className="mb-3"><a href=""><small>Smartphone</small></a></li>
+                                        <li className="mb-3"><a href=""><small>Laptop</small> </a></li>
+                                        <li className="mb-3"><a href=""><small>iMac</small></a></li>
+                                        <li className="mb-3"><a href=""><small>Game Controller</small> </a></li>
+                                        <li className="mb-3"><a href=""><small>Drone</small></a></li>
+                                        <li className="mb-3"><a href=""><small>Apple</small></a></li>
+                                    </ul>
+                                    <button className="flex items-center border-b border-b-2 hover:border-b-2 hover:border-black transition delay-200 mt-5 text-base">Browse All <HiOutlineArrowSmRight className="ml-3" /></button>
+                                </div>
+                            </div>
                         </div>
                         <div className="lg:col-span-5">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident voluptatibus in tempora itaque. Aut assumenda, culpa deserunt sit nostrum eveniet saepe fuga dolores temporibus. Voluptate, saepe quasi vitae nostrum corrupti, explicabo error aspernatur ut a quaerat, soluta nobis illum sunt provident in ipsam blanditiis tempore quisquam maiores quam aut ad quas quos. Ipsa at et perspiciatis ex rerum explicabo voluptatibus. Sint pariatur qui, est quos numquam odio esse aperiam accusamus, sit nulla tempore in voluptas eaque magni rerum mollitia repellat odit incidunt magnam soluta nihil fuga porro beatae. Alias, non nemo. Fuga dignissimos tenetur non quasi! Dignissimos, omnis ab.
