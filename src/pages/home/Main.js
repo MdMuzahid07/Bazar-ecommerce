@@ -385,6 +385,7 @@ const Main = () => {
                     </div>
                 </section>
 
+
                 {/*  Featured Brands section start here====================> */}
 
                 <section className="px-3 lg:px-0 mb-16">
@@ -394,7 +395,7 @@ const Main = () => {
                     </div>
                 </section>
 
-                {/*  Featured Brands section start here====================> */}
+                {/*  Featured Brands section  end here====================> */}
 
 
 

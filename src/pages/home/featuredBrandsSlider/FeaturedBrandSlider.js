@@ -12,16 +12,12 @@ import { Pagination } from "swiper";
 
 const FeaturedBrandSlider = () => {
     return (
-        <div style={{ backgroundColor: "#F5F5F5" }}>
-            <div className="max-w-7xl mx-auto py-16">
+        <div>
+            <div className="max-w-7xl mx-auto px-5 py-1 md:p-10">
                 <div className="mx-3 lg:mx-0">
-                    <h2 className="text-2xl font-bold text-center mb-10">Top Categories Of The Month</h2>
                     <Swiper
                         slidesPerView={1}
                         spaceBetween={10}
-                        pagination={{
-                            clickable: true,
-                        }}
                         breakpoints={{
                             300: {
                                 slidesPerView: 2,
@@ -40,27 +36,37 @@ const FeaturedBrandSlider = () => {
                                 spaceBetween: 30,
                             },
                         }}
-                        modules={[Pagination]}
+                        modules={[]}
                         className="mySwiper"
                     >
 
-
                         <SwiperSlide>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus modi dolorum veritatis. Tempore odit minima dolores autem nostrum soluta enim?</p>
+                            <img className="w-28 filter grayscale" src="https://bazaar.ui-lib.com/assets/images/brands/alibaba.png" alt="brand_logo" />
                         </SwiperSlide>
 
                         <SwiperSlide>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus modi dolorum veritatis. Tempore odit minima dolores autem nostrum soluta enim?</p>
+                            <img className="w-28 filter grayscale" src="https://bazaar.ui-lib.com/assets/images/brands/levis.png" alt="brand_logo" />
                         </SwiperSlide>
 
                         <SwiperSlide>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus modi dolorum veritatis. Tempore odit minima dolores autem nostrum soluta enim?</p>
+                            <img className="w-28 filter grayscale" src="https://bazaar.ui-lib.com/assets/images/brands/lotto.png" alt="brand_logo" />
                         </SwiperSlide>
 
                         <SwiperSlide>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus modi dolorum veritatis. Tempore odit minima dolores autem nostrum soluta enim?</p>
+                            <img className="w-28 filter grayscale" src="https://bazaar.ui-lib.com/assets/images/brands/raymond.png" alt="brand_logo" />
                         </SwiperSlide>
 
+                        <SwiperSlide>
+                            <img className="w-28 filter grayscale" src="https://bazaar.ui-lib.com/assets/images/brands/samsung.png" alt="" />
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <img className="w-28" src="https://bazaar.ui-lib.com/assets/images/brands/samsung.png" alt="" />
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <img className="w-28" src="https://bazaar.ui-lib.com/assets/images/brands/samsung.png" alt="" />
+                        </SwiperSlide>
 
                     </Swiper>
                 </div>
