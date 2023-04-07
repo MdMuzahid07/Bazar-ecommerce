@@ -13,7 +13,7 @@ import { Pagination } from "swiper";
 const FeaturedBrandSlider = () => {
     return (
         <div>
-            <div className="max-w-7xl mx-auto px-5 py-1 md:p-10">
+            <div className="max-w-7xl mx-auto px-5 py-6 px-10">
                 <div className="mx-3 lg:mx-0">
                     <Swiper
                         slidesPerView={1}
@@ -41,31 +41,45 @@ const FeaturedBrandSlider = () => {
                     >
 
                         <SwiperSlide>
-                            <img className="w-28 filter grayscale" src="https://bazaar.ui-lib.com/assets/images/brands/alibaba.png" alt="brand_logo" />
+                            <div className="flex items-center justify-center">
+                                <img className="w-28 filter grayscale" src="https://bazaar.ui-lib.com/assets/images/brands/alibaba.png" alt="brand_logo" />
+                            </div>
                         </SwiperSlide>
 
                         <SwiperSlide>
-                            <img className="w-28 filter grayscale" src="https://bazaar.ui-lib.com/assets/images/brands/levis.png" alt="brand_logo" />
+                            <div className="flex items-center justify-center">
+                                <img className="w-28 filter grayscale" src="https://bazaar.ui-lib.com/assets/images/brands/levis.png" alt="brand_logo" />
+                            </div>
                         </SwiperSlide>
 
                         <SwiperSlide>
-                            <img className="w-28 filter grayscale" src="https://bazaar.ui-lib.com/assets/images/brands/lotto.png" alt="brand_logo" />
+                            <div className="flex items-center justify-center">
+                                <img className="w-28 filter grayscale" src="https://bazaar.ui-lib.com/assets/images/brands/lotto.png" alt="brand_logo" />
+                            </div>
                         </SwiperSlide>
 
                         <SwiperSlide>
-                            <img className="w-28 filter grayscale" src="https://bazaar.ui-lib.com/assets/images/brands/raymond.png" alt="brand_logo" />
+                            <div className="flex items-center justify-center">
+                                <img className="w-28 filter grayscale" src="https://bazaar.ui-lib.com/assets/images/brands/raymond.png" alt="brand_logo" />
+                            </div>
                         </SwiperSlide>
 
                         <SwiperSlide>
-                            <img className="w-28 filter grayscale" src="https://bazaar.ui-lib.com/assets/images/brands/samsung.png" alt="" />
+                            <div className="flex items-center justify-center">
+                                <img className="w-28 filter grayscale" src="https://bazaar.ui-lib.com/assets/images/brands/samsung.png" alt="" />
+                            </div>
                         </SwiperSlide>
 
                         <SwiperSlide>
-                            <img className="w-28" src="https://bazaar.ui-lib.com/assets/images/brands/samsung.png" alt="" />
+                            <div className="flex items-center justify-center">
+                                <img className="w-28 filter grayscale" src="https://bazaar.ui-lib.com/assets/images/brands/samsung.png" alt="" />
+                            </div>
                         </SwiperSlide>
 
                         <SwiperSlide>
-                            <img className="w-28" src="https://bazaar.ui-lib.com/assets/images/brands/samsung.png" alt="" />
+                            <div className="flex items-center justify-center">
+                                <img className="w-28 filter grayscale" src="https://bazaar.ui-lib.com/assets/images/brands/samsung.png" alt="" />
+                            </div>
                         </SwiperSlide>
 
                     </Swiper>
