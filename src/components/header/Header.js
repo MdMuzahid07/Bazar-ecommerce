@@ -1,7 +1,6 @@
-import { AiOutlineTwitter, AiOutlineInstagram, AiOutlineSearch } from 'react-icons/ai';
+import { AiOutlineMenu, AiOutlineTwitter, AiOutlineInstagram, AiOutlineSearch } from 'react-icons/ai';
 import { RiFacebookBoxFill } from 'react-icons/ri';
 import { BsPerson } from 'react-icons/bs';
-import { AiOutlineMenu } from 'react-icons/ai';
 import { MdOutlineShoppingBag } from 'react-icons/md';
 import Image from 'next/image';
 import UserAccountDropdown from './UserAccountDropdown';
