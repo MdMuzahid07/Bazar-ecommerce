@@ -11,7 +11,7 @@ const CollapseComponent = ({ children }) => {
     return (
         <div className="">
             <button onClick={toggleCollapse}>
-                {isCollapsed ? <IoIosArrowDown /> : <IoIosArrowUp />}
+                {isCollapsed ? <IoIosArrowDown /> : <IoIosArrowUp style={{ color: "red" }} />}
             </button>
             {!isCollapsed && (
                 <div>

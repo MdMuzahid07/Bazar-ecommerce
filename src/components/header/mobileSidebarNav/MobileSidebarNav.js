@@ -20,47 +20,96 @@ const MobileSidebarNav = ({ toggleSidebarNav }) => {
                                 <a href="">User Account</a>
                                 <CollapseComponent>
                                     <ul>
-                                        <li>
+                                        <li className="mb-2">
                                             <a href="">Order List</a>
                                         </li>
-                                        <li>
+                                        <li className="mb-2">
                                             <a href="">Order Details</a>
                                         </li>
-                                        <li>
+                                        <li className="mb-2">
                                             <a href="">View Profile</a>
                                         </li>
-                                        <li>
+                                        <li className="mb-2">
                                             <a href="">Edit Profile</a>
                                         </li>
-                                        <li>
+                                        <li className="mb-2">
                                             <a href="">Address List</a>
                                         </li>
-                                        <li>
+                                        <li className="mb-2">
                                             <a href="">Add Address</a>
                                         </li>
-                                        <li>
+                                        <li className="mb-2">
                                             <a href="">All tickets</a>
                                         </li>
-                                        <li>
+                                        <li className="mb-2">
                                             <a href="">Wishlist</a>
                                         </li>
                                     </ul>
                                 </CollapseComponent>
                             </li>
-                            <li className="mb-3">
+                            <li className="mb-3 w-full flex justify-between items-center">
                                 <a href="">Vendor Account</a>
+                                <CollapseComponent>
+                                    <ul>
+                                        <li className="mb-2">
+                                            <a href="">Dashboard</a>
+                                        </li>
+                                        <li className="mb-2">
+                                            <a href="">Profile</a>
+                                        </li>
+                                    </ul>
+                                </CollapseComponent>
                             </li>
-                            <li className="mb-3">
+                            <li className="mb-3 w-full flex justify-between items-center">
                                 <a href="">Products</a>
+                                <CollapseComponent>
+                                    <ul>
+                                        <li className="mb-2">
+                                            <a href="">Dashboard</a>
+                                        </li>
+                                        <li className="mb-2">
+                                            <a href="">Profile</a>
+                                        </li>
+                                    </ul>
+                                </CollapseComponent>
                             </li>
-                            <li className="mb-3">
+                            <li className="mb-3 w-full flex justify-between items-center">
                                 <a href="">Orders</a>
+                                <CollapseComponent>
+                                    <ul>
+                                        <li className="mb-2">
+                                            <a href="">All Order</a>
+                                        </li>
+                                        <li className="mb-2">
+                                            <a href="">Order Details</a>
+                                        </li>
+                                    </ul>
+                                </CollapseComponent>
                             </li>
                             <li className="mb-3">
                                 <a href="">Sale Page</a>
                             </li>
-                            <li className="mb-3">
+                            <li className="mb-3 w-full flex justify-between items-center">
                                 <a href="">Shop</a>
+                                <CollapseComponent>
+                                    <ul>
+                                        <li className="mb-2">
+                                            <a href="">Search Product</a>
+                                        </li>
+                                        <li className="mb-2">
+                                            <a href="">Single Product</a>
+                                        </li>
+                                        <li className="mb-2">
+                                            <a href="">Cart</a>
+                                        </li>
+                                        <li className="mb-2">
+                                            <a href="">Checkout</a>
+                                        </li>
+                                        <li className="mb-2">
+                                            <a href="">Order Confirmation</a>
+                                        </li>
+                                    </ul>
+                                </CollapseComponent>
                             </li>
                         </ul>
                     </div>
