@@ -45,9 +45,23 @@ const AccountCreateModalForm = ({ isOpen, handleOverlayClick, handleCloseModal }
                                     <button type="submit" className="p-2 bg-red-500 text-white w-full rounded ">Login</button>
                                 </form>
                             </div>
-                            <hr className="my-5" />
-                            <div>
 
+                            <p className="text-center my-3">or</p>
+
+                            <div>
+                                <button className="p-2 text-white w-full rounded bg-blue-800 mb-3">Continue with facebook</button>
+                                <button className="p-2 text-white w-full rounded bg-blue-500">Continue with google</button>
+                            </div>
+
+                            <div>
+                                <div className="flex items-center justify-center gap-2 mt-2">
+                                    <p><small>{`Don't have account?`}</small></p>
+                                    <a href=""><small className="border-b border-black">Sing up</small></a>
+                                </div>
+                                <div className="flex items-center justify-center gap-2 mt-2 bg-slate-100 p-2 rounded">
+                                    <p><small>{`Forget your password?`}</small></p>
+                                    <a href=""><small className="border-b border-black">Reset it</small></a>
+                                </div>
                             </div>
                         </div>
                     </div>
