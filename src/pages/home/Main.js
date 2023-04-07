@@ -413,6 +413,7 @@ const Main = () => {
 
                 {/*  selected product section  end here====================> */}
 
+
             </div >
         </section >
     );
