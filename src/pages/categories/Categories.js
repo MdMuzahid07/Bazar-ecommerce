@@ -2,6 +2,7 @@ import React from 'react';
 import { GrApps, GrMoreVertical, GrMenu } from "react-icons/gr";
 import { AiOutlineStar } from "react-icons/ai";
 import { BsCircle } from "react-icons/bs";
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import CategoriesProductCard from './CategoriesProductCard';
 
 const Categories = () => {
@@ -234,7 +235,28 @@ const Categories = () => {
                                 <CategoriesProductCard />
                                 <CategoriesProductCard />
                             </div>
+
+
+                            {/* pagination section start here */}
+                            <div className="flex flex-wrap items-center justify-between mt-3">
+                                <div>
+                                    <p><small>Showing {`1.,9`} of {`1.3`}k products</small></p>
+                                </div>
+                                <div className="flex items-center justify-between">
+                                    <button className="border border-red-300 w-7 h-7 flex items-center justify-center mr-3 rounded-full"><MdKeyboardArrowLeft /></button>
+
+                                    <button className="border border-red-300 w-7 h-7 flex items-center justify-center mx-1 rounded-full">1</button>
+
+                                    <button className="border border-red-300 w-7 h-7 flex items-center justify-center mx-1 rounded-full">2</button>
+
+                                    <button className="border border-red-300 w-7 h-7 flex items-center justify-center mx-1 rounded-full">3</button>
+
+                                    <button className="border border-red-300 w-7 h-7 flex items-center justify-center ml-3 rounded-full"><MdKeyboardArrowRight /></button>
+                                </div>
+                            </div>
+                            {/* pagination section end here */}
                         </div>
+
                     </div>
                 </section>
 
