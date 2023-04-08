@@ -2,6 +2,7 @@ import React from 'react';
 import { GrApps, GrMoreVertical, GrMenu } from "react-icons/gr";
 import { AiOutlineStar } from "react-icons/ai";
 import { BsCircle } from "react-icons/bs";
+import CategoriesProductCard from './CategoriesProductCard';
 
 const Categories = () => {
     return (
@@ -12,7 +13,7 @@ const Categories = () => {
                 {/* short by and view change header section start here */}
 
                 <header className="pt-8 pb-14 px-3 lg:px-0">
-                    <div className="grid md:grid-cols-2 bg-white px-5 py-3 rounded-lg drop-shadow relative">
+                    <div className="grid md:grid-cols-2 bg-white px-5 py-2 rounded-lg drop-shadow relative">
                         <div >
                             <h1 className="text-lg">Searching for “ {`mobile phone`} ”</h1>
                             <p>{`48`} result found</p>
@@ -24,7 +25,7 @@ const Categories = () => {
                                 </div>
                                 <div>
                                     <select
-                                        className="block px-4 py-2 md:py-3  rounded-md shadow-sm outline-none border w-44"
+                                        className="block px-4 py-2  rounded-md shadow-sm outline-none border w-44"
                                     >
                                         <option value="">Select an option</option>
                                         <option value="option1">Option 1</option>
@@ -222,7 +223,17 @@ const Categories = () => {
                         </aside>
 
                         <div className="md:col-span-5">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, deleniti perferendis reiciendis vero voluptatibus dolore tempora aspernatur molestias
+                            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+                                <CategoriesProductCard />
+                                <CategoriesProductCard />
+                                <CategoriesProductCard />
+                                <CategoriesProductCard />
+                                <CategoriesProductCard />
+                                <CategoriesProductCard />
+                                <CategoriesProductCard />
+                                <CategoriesProductCard />
+                                <CategoriesProductCard />
+                            </div>
                         </div>
                     </div>
                 </section>
