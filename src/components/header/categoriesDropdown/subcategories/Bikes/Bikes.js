@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { GiLargeDress } from 'react-icons/gi';
+import { GiDutchBike } from 'react-icons/gi';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 
-const Fashion = () => {
+const Bikes = () => {
     const [showDropdown, setShowDropdown] = useState(false);
 
     return (
@@ -13,7 +13,7 @@ const Fashion = () => {
                     onMouseEnter={() => setShowDropdown(true)}
                     onMouseLeave={() => setShowDropdown(false)}
                 >
-                    <GiLargeDress style={{ fontSize: "20px", marginRight: "7px" }} /> Fashions <MdKeyboardArrowRight className="absolute right-3" />
+                    <GiDutchBike style={{ fontSize: "20px", marginRight: "7px" }} /> Bikes <MdKeyboardArrowRight className="absolute right-3" />
                 </button>
                 {showDropdown && (
                     <div className="absolute left-56 top-0 py-2 w-96 bg-white rounded-md shadow-xl z-10">
@@ -29,4 +29,4 @@ const Fashion = () => {
     );
 };
 
-export default Fashion;
+export default Bikes;

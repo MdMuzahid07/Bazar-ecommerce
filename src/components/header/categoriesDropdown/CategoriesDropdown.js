@@ -4,6 +4,9 @@ import { BiCategory } from 'react-icons/bi';
 import { AiOutlineGift } from 'react-icons/ai';
 import { GiAmpleDress, GiLargeDress, GiLaptop, GiDutchBike, GiFlowerPot, GiOldMicrophone, GiHealthPotion, GiCat, GiBearFace, GiFoodTruck, GiGearHammer } from 'react-icons/gi';
 import Fashion from './subcategories/Fashion/Fashion';
+import Electronics from './subcategories/Electronics/Electronics';
+import Bikes from './subcategories/Bikes/Bikes';
+import HomeAndGarden from './subcategories/homeAndGarden/HomeAndGarden';
 
 const CategoriesDropdown = ({ children }) => {
     const [isOpen, setIsOpen] = useState(false)
@@ -32,18 +35,23 @@ const CategoriesDropdown = ({ children }) => {
                             <Fashion />
                             {/* this is a component with sub categories mega menu */}
 
-                            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex" role="menuitem">
-                                <GiLaptop style={{ fontSize: "20px", marginRight: "7px" }} /> Electronics
-                            </a>
-                            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex" role="menuitem">
-                                <GiDutchBike style={{ fontSize: "20px", marginRight: "7px" }} /> Bikes
-                            </a>
-                            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex" role="menuitem">
-                                <GiFlowerPot style={{ fontSize: "20px", marginRight: "7px" }} /> Home & Garden
-                            </a>
+                            {/* this is a component with sub categories mega menu */}
+                            <Electronics />
+                            {/* this is a component with sub categories mega menu */}
+
+                            {/* this is a component with sub categories mega menu */}
+                            <Bikes />
+                            {/* this is a component with sub categories mega menu */}
+
+
+                            {/* this is a component with sub categories mega menu */}
+                            <HomeAndGarden />
+                            {/* this is a component with sub categories mega menu */}
+
                             <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex" role="menuitem">
                                 <AiOutlineGift style={{ fontSize: "20px", marginRight: "7px" }} /> Gifts
                             </a>
+
                             <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex" role="menuitem">
                                 <GiOldMicrophone style={{ fontSize: "20px", marginRight: "7px" }} /> Musics
                             </a>
