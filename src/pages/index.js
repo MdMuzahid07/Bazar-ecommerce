@@ -8,6 +8,7 @@ import AccountCreateModalForm from '@/components/AccountCreateModalForm/AccountC
 import MobileSidebarNav from '@/components/header/mobileSidebarNav/MobileSidebarNav'
 import MobileSearchDropdown from '@/components/MobileSearchDropdown/MobileSearchDropdown'
 import Main from './home/Main'
+import Categories from './categories/Categories'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -66,7 +67,11 @@ export default function Home() {
         <Header toggleMobileSearchDropdown={toggleMobileSearchDropdown} toggleSidebarNav={toggleSidebarNav} toggleSidebarCart={toggleSidebarCart} handleOpenModal={handleOpenModal} />
 
         {/* homepage component */}
-        <Main />
+        {/* <Main /> */}
+
+        {/* category page */}
+        <Categories />
+
 
         <AccountCreateModalForm handleCloseModal={handleCloseModal} handleOpenModal={handleOpenModal} handleOverlayClick={handleOverlayClick} isOpen={isOpen} />
 
