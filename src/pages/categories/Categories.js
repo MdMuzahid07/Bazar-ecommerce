@@ -1,5 +1,7 @@
 import React from 'react';
 import { GrApps, GrMoreVertical, GrMenu } from "react-icons/gr";
+import { AiOutlineStar } from "react-icons/ai";
+import { BsCircle } from "react-icons/bs";
 
 const Categories = () => {
     return (
@@ -50,11 +52,177 @@ const Categories = () => {
 
                 <section className="pb-16">
                     <div className="grid md:grid-cols-7 gap-5">
-                        <div className="md:col-span-2 bg-white rounded-lg p-5">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis animi hic. Sed aspernatur officiis porro sint provident inventore necessitatibus.
-                        </div>
+                        <aside className="md:col-span-2 bg-white rounded-lg p-6">
+                            <h1 className="text-sm font-bold mb-2">Categories</h1>
+
+                            <ul>
+                                <li className="mb-1">
+                                    <a href=""><small>Bath Preparations</small></a>
+                                </li>
+                                <li className="mb-1">
+                                    <a href=""><small>Eye Makeup Preparations</small></a>
+                                </li>
+                                <li className="mb-1">
+                                    <a href=""><small>Fragrance</small></a>
+                                </li>
+                                <li className="mb-1">
+                                    <a href=""><small>Hair Preparations</small></a>
+                                </li>
+                            </ul>
+
+                            <hr className="my-4" />
+
+                            <div>
+                                <h3 className="text-sm font-bold mb-4">Price Range</h3>
+                                <div className="flex items-center gap-2">
+                                    <input className="border rounded p-1 w-full" placeholder="0" type="number" />
+                                    <p>-</p>
+                                    <input className="border rounded p-1 w-full" placeholder="250" type="number" />
+                                </div>
+                            </div>
+
+                            <hr className="my-4" />
+
+                            <div>
+                                <h3 className="text-sm font-bold mb-3">Brands</h3>
+
+                                <div>
+                                    <div className="flex items-center gap-2 mb-2">
+                                        <input type="checkbox" name="" id="maccs" />
+                                        <label htmlFor="maccs"><p><small>Maccs</small></p></label>
+                                    </div>
+
+                                    <div className="flex items-center gap-2 mb-2">
+                                        <input type="checkbox" name="" id="karts" />
+                                        <label htmlFor="karts"><p><small>Karts</small></p></label>
+                                    </div>
+
+                                    <div className="flex items-center gap-2 mb-2">
+                                        <input type="checkbox" name="" id="baars" />
+                                        <label htmlFor="baars"><p><small>Baars</small></p></label>
+                                    </div>
+
+                                    <div className="flex items-center gap-2 mb-2">
+                                        <input type="checkbox" name="" id="bukks" />
+                                        <label htmlFor="bukks"><p><small>Bukks</small></p></label>
+                                    </div>
+
+                                    <div className="flex items-center gap-2 mb-2">
+                                        <input type="checkbox" name="" id="luasis" />
+                                        <label htmlFor="luasis"><p><small>Luasis</small></p></label>
+                                    </div>
+                                </div>
+
+                                <hr className="my-4" />
+
+                                <div>
+                                    <div className="flex items-center gap-2 mb-2">
+                                        <input type="checkbox" name="" id="onsale" />
+                                        <label htmlFor="onsale"><p><small>On Sale</small></p></label>
+                                    </div>
+
+                                    <div className="flex items-center gap-2 mb-2">
+                                        <input type="checkbox" name="" id="inStock" />
+                                        <label htmlFor="inStock"><p><small>In Stock</small></p></label>
+                                    </div>
+
+                                    <div className="flex items-center gap-2 mb-2">
+                                        <input type="checkbox" name="" id="featured" />
+                                        <label htmlFor="featured"><p><small>Featured</small></p></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr className="my-4" />
+
+                            <div>
+                                <h3 className="text-sm font-bold mb-3">Ratings</h3>
+
+                                <div className="flex items-center gap-2 mb-2">
+                                    <input type="checkbox" name="" id="star1" />
+                                    <label htmlFor="star1">
+                                        <div className="flex items-center">
+                                            <AiOutlineStar style={{ fontSize: "15px" }} />
+                                            <AiOutlineStar style={{ fontSize: "15px" }} />
+                                            <AiOutlineStar style={{ fontSize: "15px" }} />
+                                            <AiOutlineStar style={{ fontSize: "15px" }} />
+                                            <AiOutlineStar style={{ fontSize: "15px" }} />
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div className="flex items-center gap-2 mb-2">
+                                    <input type="checkbox" name="" id="star2" />
+                                    <label htmlFor="star2">
+                                        <div className="flex items-center">
+                                            <AiOutlineStar style={{ fontSize: "15px" }} />
+                                            <AiOutlineStar style={{ fontSize: "15px" }} />
+                                            <AiOutlineStar style={{ fontSize: "15px" }} />
+                                            <AiOutlineStar style={{ fontSize: "15px" }} />
+                                            <AiOutlineStar style={{ fontSize: "15px" }} />
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div className="flex items-center gap-2 mb-2">
+                                    <input type="checkbox" name="" id="star3" />
+                                    <label htmlFor="star3">
+                                        <div className="flex items-center">
+                                            <AiOutlineStar style={{ fontSize: "15px" }} />
+                                            <AiOutlineStar style={{ fontSize: "15px" }} />
+                                            <AiOutlineStar style={{ fontSize: "15px" }} />
+                                            <AiOutlineStar style={{ fontSize: "15px" }} />
+                                            <AiOutlineStar style={{ fontSize: "15px" }} />
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div className="flex items-center gap-2 mb-2">
+                                    <input type="checkbox" name="" id="star4" />
+                                    <label htmlFor="star4">
+                                        <div className="flex items-center">
+                                            <AiOutlineStar style={{ fontSize: "15px" }} />
+                                            <AiOutlineStar style={{ fontSize: "15px" }} />
+                                            <AiOutlineStar style={{ fontSize: "15px" }} />
+                                            <AiOutlineStar style={{ fontSize: "15px" }} />
+                                            <AiOutlineStar style={{ fontSize: "15px" }} />
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div className="flex items-center gap-2 mb-2">
+                                    <input type="checkbox" name="" id="star5" />
+                                    <label htmlFor="star5">
+                                        <div className="flex items-center">
+                                            <AiOutlineStar style={{ fontSize: "15px" }} />
+                                            <AiOutlineStar style={{ fontSize: "15px" }} />
+                                            <AiOutlineStar style={{ fontSize: "15px" }} />
+                                            <AiOutlineStar style={{ fontSize: "15px" }} />
+                                            <AiOutlineStar style={{ fontSize: "15px" }} />
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <hr className="my-4" />
+
+                            <div>
+                                <h3 className="text-sm font-bold mb-3">Colors</h3>
+
+                                <div className="flex items-center gap-2">
+                                    <button><BsCircle style={{ fontSize: "20px", background: "#1C1C1C", borderRadius: "50%", }} /></button>
+                                    <button><BsCircle style={{ fontSize: "20px", background: "#FF7A7A", borderRadius: "50%", }} /></button>
+                                    <button><BsCircle style={{ fontSize: "20px", background: "#FFC672", borderRadius: "50%", }} /></button>
+                                    <button><BsCircle style={{ fontSize: "20px", background: "#84FFB5", borderRadius: "50%", }} /></button>
+                                    <button><BsCircle style={{ fontSize: "20px", background: "#70F6FF", borderRadius: "50%", }} /></button>
+                                    <button><BsCircle style={{ fontSize: "20px", background: "#6B7AFF", borderRadius: "50%", }} /></button>
+                                </div>
+                            </div>
+
+                        </aside>
+
                         <div className="md:col-span-5">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, deleniti perferendis reiciendis vero voluptatibus dolore tempora aspernatur molestias doloremque nisi magnam libero incidunt, accusamus maxime autem impedit corporis possimus quis non reprehenderit doloribus fuga officia veniam suscipit? Labore quis error, quod ipsum possimus, distinctio voluptatum, vero amet tenetur in voluptates!
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, deleniti perferendis reiciendis vero voluptatibus dolore tempora aspernatur molestias
                         </div>
                     </div>
                 </section>
