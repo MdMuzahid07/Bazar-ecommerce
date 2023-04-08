@@ -3,6 +3,7 @@ import { IoIosArrowForward } from 'react-icons/io';
 import { BiCategory } from 'react-icons/bi';
 import { AiOutlineGift } from 'react-icons/ai';
 import { GiAmpleDress, GiLargeDress, GiLaptop, GiDutchBike, GiFlowerPot, GiOldMicrophone, GiHealthPotion, GiCat, GiBearFace, GiFoodTruck, GiGearHammer } from 'react-icons/gi';
+import Fashion from './subcategories/Fashion/Fashion';
 
 const CategoriesDropdown = ({ children }) => {
     const [isOpen, setIsOpen] = useState(false)
@@ -25,10 +26,12 @@ const CategoriesDropdown = ({ children }) => {
                         style={{ width: "215px" }}
                         className="absolute right-0 mt-2 rounded shadow-lg bg-white ring-1 ring-black ring-opacity-5"
                     >
-                        <div className="py-3" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex" role="menuitem">
-                                <GiLargeDress style={{ fontSize: "20px", marginRight: "7px" }} /> Fashions
-                            </a>
+                        <div className="py-3 relative" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+
+                            {/* this is a component with sub categories mega menu */}
+                            <Fashion />
+                            {/* this is a component with sub categories mega menu */}
+
                             <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex" role="menuitem">
                                 <GiLaptop style={{ fontSize: "20px", marginRight: "7px" }} /> Electronics
                             </a>
