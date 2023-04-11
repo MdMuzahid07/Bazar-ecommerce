@@ -87,7 +87,6 @@ const VendorShopPage = () => {
                                             <label for="rating5" className="text-lg text-yellow-400 cursor-pointer">&#9733;</label>
                                         </div>
 
-
                                     </div>
                                 </div>
                                 <div className="sm:col-span-4">
@@ -209,7 +208,128 @@ const VendorShopPage = () => {
                                 <hr className="my-5" />
 
                                 <div>
+                                    <h1 className="text-sm mb-3">Ratings</h1>
+                                    <div className="flex items-center space-x-1 sm:mx-1">
+                                        <input type="radio" name="rating" value="1" id="rating1" className="sr-only" />
+                                        <label for="rating1" className="text-lg text-yellow-400 cursor-pointer">&#9733;</label>
 
+                                        <input type="radio" name="rating" value="2" id="rating2" className="sr-only" />
+                                        <label for="rating2" className="text-lg text-yellow-400 cursor-pointer">&#9733;</label>
+
+                                        <input type="radio" name="rating" value="3" id="rating3" className="sr-only" />
+                                        <label for="rating3" className="text-lg text-yellow-400 cursor-pointer">&#9733;</label>
+
+                                        <input type="radio" name="rating" value="4" id="rating4" className="sr-only" />
+                                        <label for="rating4" className="text-lg text-yellow-400 cursor-pointer">&#9733;</label>
+
+                                        <input type="radio" name="rating" value="5" id="rating5" className="sr-only" />
+                                        <label for="rating5" className="text-lg text-yellow-400 cursor-pointer">&#9733;</label>
+                                    </div>
+                                </div>
+
+                                <hr className="my-5" />
+
+                                <div>
+                                    <h1 className="text-sm mb-3">Main Material</h1>
+                                    <ul>
+                                        <li className="flex items-center gap-2">
+                                            <input type="checkbox" name="" id="bangladesh" />
+                                            <label htmlFor="bangladesh" className="text-xs">Cotton</label>
+                                        </li>
+                                        <li className="flex items-center gap-2">
+                                            <input type="checkbox" name="" id="bangladesh" />
+                                            <label htmlFor="bangladesh" className="text-xs">Cotton</label>
+                                        </li>
+                                        <li className="flex items-center gap-2">
+                                            <input type="checkbox" name="" id="bangladesh" />
+                                            <label htmlFor="bangladesh" className="text-xs">Cotton</label>
+                                        </li>
+                                        <li className="flex items-center gap-2">
+                                            <input type="checkbox" name="" id="bangladesh" />
+                                            <label htmlFor="bangladesh" className="text-xs">Cotton</label>
+                                        </li>
+                                        <li className="flex items-center gap-2">
+                                            <input type="checkbox" name="" id="bangladesh" />
+                                            <label htmlFor="bangladesh" className="text-xs">Cotton</label>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                                <hr className="my-5" />
+
+                                <div>
+                                    <h1 className="text-sm mb-3">Size</h1>
+                                    <ul>
+                                        <li className="flex items-center gap-2">
+                                            <input type="checkbox" name="" id="bangladesh" />
+                                            <label htmlFor="bangladesh" className="text-xs">Xl</label>
+                                        </li>
+                                        <li className="flex items-center gap-2">
+                                            <input type="checkbox" name="" id="bangladesh" />
+                                            <label htmlFor="bangladesh" className="text-xs">Lg</label>
+                                        </li>
+                                        <li className="flex items-center gap-2">
+                                            <input type="checkbox" name="" id="bangladesh" />
+                                            <label htmlFor="bangladesh" className="text-xs">XXL</label>
+                                        </li>
+                                        <li className="flex items-center gap-2">
+                                            <input type="checkbox" name="" id="bangladesh" />
+                                            <label htmlFor="bangladesh" className="text-xs">MD</label>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <hr className="my-5" />
+
+                                <div>
+                                    <h1 className="text-sm mb-3">Color Family</h1>
+                                    <ul>
+                                        <li className="flex items-center gap-2">
+                                            <input type="checkbox" name="" id="bangladesh" />
+                                            <label htmlFor="bangladesh" className="text-xs">Black</label>
+                                        </li>
+                                        <li className="flex items-center gap-2">
+                                            <input type="checkbox" name="" id="bangladesh" />
+                                            <label htmlFor="bangladesh" className="text-xs">White</label>
+                                        </li>
+                                        <li className="flex items-center gap-2">
+                                            <input type="checkbox" name="" id="bangladesh" />
+                                            <label htmlFor="bangladesh" className="text-xs">Red</label>
+                                        </li>
+                                        <li className="flex items-center gap-2">
+                                            <input type="checkbox" name="" id="bangladesh" />
+                                            <label htmlFor="bangladesh" className="text-xs">Orange</label>
+                                        </li>
+                                        <li className="flex items-center gap-2">
+                                            <input type="checkbox" name="" id="bangladesh" />
+                                            <label htmlFor="bangladesh" className="text-xs">Yellow</label>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <hr className="my-5" />
+
+                                <div>
+                                    <h1 className="text-sm mb-3">Warranty Type</h1>
+                                    <ul>
+                                        <li className="flex items-center gap-2">
+                                            <input type="checkbox" name="" id="bangladesh" />
+                                            <label htmlFor="bangladesh" className="text-xs">No Warranty</label>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <hr className="my-5" />
+
+                                <div>
+                                    <h1 className="text-sm mb-3">Fit Type</h1>
+                                    <ul>
+                                        <li className="flex items-center gap-2">
+                                            <input type="checkbox" name="" id="bangladesh" />
+                                            <label htmlFor="bangladesh" className="text-xs">Slim</label>
+                                        </li>
+                                    </ul>
                                 </div>
 
                             </div>
