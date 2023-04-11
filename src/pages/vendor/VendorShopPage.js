@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { IoIosArrowForward } from 'react-icons/io';
 import { BiMap, BiStore } from 'react-icons/bi';
 import { AiOutlineMail } from 'react-icons/ai';
-import { BsTelephone, BsChatLeftText } from 'react-icons/bs';
+import { BsTelephone, BsChatLeftText, BsSearch } from 'react-icons/bs';
 import CategoriesProductCard from '../categories/CategoriesProductCard';
 import { GrApps, GrMoreVertical, GrMenu } from "react-icons/gr";
 
@@ -336,28 +336,42 @@ const VendorShopPage = () => {
 
                             </div>
                         </aside>
+
+                        {/* home , all product, profile navbar */}
                         <div className="lg:col-span-5">
                             <header>
-                                <ul className="flex items-center gap-5 text-sm font-bold">
-                                    <li
-                                        onClick={handleHomeBtn}
-                                        className={isHome ? "border-b-2 border-red-500" : "hover:border-b-2 border-red-500"}
-                                    >
-                                        <button>Home</button>
-                                    </li>
-                                    <li
-                                        onClick={handleAllProductsBtn}
-                                        className={isAllProducts ? "border-b-2 border-red-500" : "hover:border-b-2 border-red-500"}
-                                    >
-                                        <button>All Products</button>
-                                    </li>
-                                    <li
-                                        onClick={handleProfilePage}
-                                        className={isProfile ? "border-b-2 border-red-500" : "hover:border-b-2 border-red-500"}
-                                    >
-                                        <button>Profile</button>
-                                    </li>
-                                </ul>
+                                <div className="flex items-center justify-center sm:justify-between">
+                                    <div>
+                                        <ul className="flex items-center gap-5 text-sm font-bold">
+                                            <li
+                                                onClick={handleHomeBtn}
+                                                className={isHome ? "border-b-2 border-red-500" : "hover:border-b-2 border-red-500"}
+                                            >
+                                                <button>Home</button>
+                                            </li>
+                                            <li
+                                                onClick={handleAllProductsBtn}
+                                                className={isAllProducts ? "border-b-2 border-red-500" : "hover:border-b-2 border-red-500"}
+                                            >
+                                                <button>All Products</button>
+                                            </li>
+                                            <li
+                                                onClick={handleProfilePage}
+                                                className={isProfile ? "border-b-2 border-red-500" : "hover:border-b-2 border-red-500"}
+                                            >
+                                                <button>Profile</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    {/* product search input  */}
+                                    <div className="relative">
+                                        <input className="px-5 py-1 border md:w-80" type="text" placeholder="search in store" name="" id="" />
+                                        <div className="absolute right-5 top-2">
+                                            < BsSearch />
+                                        </div>
+                                    </div>
+                                </div>
                             </header>
                             <div>
                                 {/* home product profile page conditionally rendering here */}
@@ -383,7 +397,7 @@ const VendorShopPage = () => {
                                                 <CategoriesProductCard />
 
                                             </div>
-                                            <div className="flex justify-center mt-14">
+                                            <div className="mt-14">
                                                 <button className="border border-red-500 md:px-20 lg:px-32 p-2">Load More</button>
                                             </div>
                                         </section>
@@ -425,10 +439,33 @@ const VendorShopPage = () => {
                                                 </div>
                                             </div>
                                         </header>
+
+                                        <hr className="my-5" />
+
                                         <main>
+                                            <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-5">
 
+                                                {/* this card imported from CategoriesProductCard */}
+
+                                                <CategoriesProductCard />
+                                                <CategoriesProductCard />
+                                                <CategoriesProductCard />
+                                                <CategoriesProductCard />
+                                                <CategoriesProductCard />
+                                                <CategoriesProductCard />
+                                                <CategoriesProductCard />
+                                                <CategoriesProductCard />
+                                                <CategoriesProductCard />
+                                                <CategoriesProductCard />
+                                                <CategoriesProductCard />
+                                                <CategoriesProductCard />
+
+
+                                            </div>
                                         </main>
-
+                                        <div className="mt-14">
+                                            <button className="border border-red-500 md:px-20 lg:px-32 p-2">Load More</button>
+                                        </div>
                                     </div>
                                 }
 
@@ -441,9 +478,9 @@ const VendorShopPage = () => {
                                 {
                                     isProfile && <div>
 
-                                        <h1>profile</h1>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, dolor.
+                                        <section className="mt-10">
 
+                                        </section>
 
                                     </div>
                                 }
