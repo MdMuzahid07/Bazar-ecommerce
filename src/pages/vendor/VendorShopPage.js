@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { IoIosArrowForward } from 'react-icons/io';
 import { BiMap, BiStore } from 'react-icons/bi';
 import { AiOutlineMail } from 'react-icons/ai';
-import { BsTelephone, BsChatLeftText, BsSearch } from 'react-icons/bs';
+import { BsTelephone, BsChatLeftText, BsSearch, BsPencil } from 'react-icons/bs';
 import CategoriesProductCard from '../categories/CategoriesProductCard';
 import { GrApps, GrMoreVertical, GrMenu } from "react-icons/gr";
 
@@ -367,9 +367,9 @@ const VendorShopPage = () => {
                                     {/* product search input  */}
                                     <div className="relative">
                                         <input className="px-5 py-1 border md:w-80" type="text" placeholder="search in store" name="" id="" />
-                                        <div className="absolute right-5 top-2">
+                                        <button className="absolute right-5 top-2">
                                             < BsSearch />
-                                        </div>
+                                        </button>
                                     </div>
                                 </div>
                             </header>
@@ -479,6 +479,19 @@ const VendorShopPage = () => {
                                     isProfile && <div>
 
                                         <section className="mt-10">
+
+                                            {/* write a review */}
+                                            <div className="border rounded p-5 md:p-10">
+                                                <h1 className="mb-4 text-lg font-bold">Write A Review</h1>
+                                                <div className="relative">
+                                                    <input className="pl-10 py-2 border w-full" type="text" placeholder="your review" name="" id="" />
+                                                    <button className="absolute left-4 top-3">
+                                                        < BsPencil />
+                                                    </button>
+                                                </div>
+                                                <button className="px-7 py-2 bg-slate-100 rounded mt-5 font-bold text-sm">Add Your Review</button>
+                                            </div>
+
 
                                         </section>
 
