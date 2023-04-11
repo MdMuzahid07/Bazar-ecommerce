@@ -153,8 +153,14 @@ const VendorShopPage = () => {
                             </li>
                         </ul>
                     </header>
-                    <main>
+                    <main className="grid lg:grid-cols-6 gap-5 mt-5">
+                        <div className="lg:col-span-1">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate itaque aliquid, dolor reiciendis quae quam eius debitis sequi ipsam natus.
 
+                        </div>
+                        <div className="lg:col-span-5">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate itaque aliquid, dolor reiciendis quae quam eius debitis sequi ipsam natus.
+                        </div>
                     </main>
                 </section>
                 {/* store main layout end here */}
