@@ -357,12 +357,62 @@ const VendorShopPage = () => {
                                     </li>
                                 </ul>
                             </header>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate itaque aliquid, dolor reiciendis quae quam eius debitis sequi ipsam natus.
+                            <div>
+                                {/* home product profile page conditionally rendering here */}
+
+                                {/* homepage start here ================== */}
+
+                                {
+                                    isHome && <div>
+
+                                        <h2>homepage</h2>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, dolor.
+
+
+
+                                    </div>
+                                }
+
+
+                                {/* homepage end here ==================> */}
+
+
+                                {/* all product page start here ================== */}
+
+                                {
+                                    isAllProducts && <div>
+                                        <h1>all products</h1>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, dolor.
+
+
+                                    </div>
+                                }
+
+
+                                {/* all product page end here ==================> */}
+
+
+                                {/* all product page start here ================== */}
+
+                                {
+                                    isProfile && <div>
+
+                                        <h1>profile</h1>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, dolor.
+
+
+                                    </div>
+                                }
+
+
+                                {/* all product page end here ==================> */}
+
+
+                            </div>
                         </div>
                     </main>
                 </section>
                 {/* store main layout end here */}
-
 
             </div>
 
