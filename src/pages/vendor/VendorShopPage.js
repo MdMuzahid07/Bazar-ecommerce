@@ -1,10 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { IoIosArrowForward } from 'react-icons/io';
 import { BiMap, BiStore } from 'react-icons/bi';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsTelephone, BsChatLeftText } from 'react-icons/bs';
 
 const VendorShopPage = () => {
+    // states for store main layout buttons
+    const [isHome, setIsHome] = useState(false);
+    const [isAllProducts, setIsAllProducts] = useState(false);
+    const [isProfile, setIsProfile] = useState(false);
+
+    // this function for store main layout header buttons ==============
+    const handleHomeBtn = () => {
+        setIsAllProducts(false);
+        setIsProfile(false);
+        setIsHome(true);
+    };
+
+    const handleAllProductsBtn = () => {
+        setIsProfile(false);
+        setIsHome(false);
+        setIsAllProducts(true);
+    };
+
+    const handleProfilePage = () => {
+        setIsHome(false);
+        setIsAllProducts(false);
+        setIsProfile(true);
+    };
+
+    // =====================================================!>
+
     return (
         <section style={{ background: "#FFFFFF" }} >
             <div className="max-w-6xl mx-auto py-10 ">
@@ -34,9 +60,10 @@ const VendorShopPage = () => {
                     {/* banner area======================> */}
                     <div className="relative">
                         <div>
-                            <img className="w-full h-96 md:h-auto mt-8 rounded-xl" src="https://media.istockphoto.com/id/1289226223/vector/organic-grocery-shopping-web-banner-design-for-store-online-market-home-delivery-line-vector.jpg?s=612x612&w=0&k=20&c=ID9loDx497I65NlYnCvdmCHfc1WUj1rF5ztcZ3oYrQo=" alt="" />
+                            <img
+                                className="w-full h-96 md:h-auto mt-8 rounded-xl" src="https://previews.123rf.com/images/varijanta/varijanta1601/varijanta160100046/51310252-thin-line-flat-design-banner-of-online-shopping-e-commerce-m-commerce-modern-vector-illustration.jpg" alt="storeBanner" />
                         </div>
-                        <div className="absolute left-0 bottom-0 bg-slate-800 text-white w-full rounded-b-xl px-5 py-5 sm:py-10">
+                        <div style={{ background: "rgba(0, 0, 0, 0.73)" }} className="absolute left-0 bottom-0 text-white w-full rounded-b-xl px-5 py-5 sm:py-10">
                             <div className="grid sm:grid-cols-5 gap-3 relative">
                                 <div className="sm:col-span-1 -mt-14 sm:-mt-20">
                                     <img className="w-16 sm:w-28  rounded-full mb-3" src="https://portotheme.com/html/wolmart/assets/images/vendor/brand/2-100x100.png" alt="" />
@@ -100,6 +127,37 @@ const VendorShopPage = () => {
 
                 {/* header banner and Breadcrumbs section end here */}
 
+
+
+                {/* store main layout start here */}
+                <section className="mt-10">
+                    <header>
+                        <ul className="flex items-center gap-5 text-sm font-bold">
+                            <li
+                                onClick={handleHomeBtn}
+                                className={isHome ? "border-b-2 border-red-500" : "hover:border-b-2 border-red-500"}
+                            >
+                                <button>Home</button>
+                            </li>
+                            <li
+                                onClick={handleAllProductsBtn}
+                                className={isAllProducts ? "border-b-2 border-red-500" : "hover:border-b-2 border-red-500"}
+                            >
+                                <button>All Products</button>
+                            </li>
+                            <li
+                                onClick={handleProfilePage}
+                                className={isProfile ? "border-b-2 border-red-500" : "hover:border-b-2 border-red-500"}
+                            >
+                                <button>Profile</button>
+                            </li>
+                        </ul>
+                    </header>
+                    <main>
+
+                    </main>
+                </section>
+                {/* store main layout end here */}
 
 
             </div>
