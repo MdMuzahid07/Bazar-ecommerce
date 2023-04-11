@@ -131,7 +131,7 @@ const VendorShopPage = () => {
 
 
                 {/* store main layout start here */}
-                <section className="mt-10">
+                <section className="mt-10 mx-3 lg:mx-0">
                     <main className="grid lg:grid-cols-6 gap-5 mt-5">
                         <aside className="lg:col-span-1">
                             <div>
@@ -340,7 +340,7 @@ const VendorShopPage = () => {
                         {/* home , all product, profile navbar */}
                         <div className="lg:col-span-5">
                             <header>
-                                <div className="flex items-center justify-center sm:justify-between">
+                                <div className="flex flex-wrap items-center justify-center sm:justify-between gap-5">
                                     <div>
                                         <ul className="flex items-center gap-5 text-sm font-bold">
                                             <li
@@ -491,6 +491,10 @@ const VendorShopPage = () => {
                                                 </div>
                                                 <button className="px-7 py-2 bg-slate-100 rounded mt-5 font-bold text-sm">Add Your Review</button>
                                             </div>
+
+
+
+
 
 
                                         </section>
