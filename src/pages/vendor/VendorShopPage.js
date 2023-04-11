@@ -1,32 +1,101 @@
 import React from 'react';
 import { IoIosArrowForward } from 'react-icons/io';
+import { BiMap, BiStore } from 'react-icons/bi';
+import { AiOutlineMail } from 'react-icons/ai';
+import { BsTelephone, BsChatLeftText } from 'react-icons/bs';
 
 const VendorShopPage = () => {
     return (
         <section style={{ background: "#FFFFFF" }} >
-            <div classNameName="max-w-6xl mx-auto py-10">
+            <div className="max-w-6xl mx-auto py-10 ">
 
                 {/* header banner and Breadcrumbs section start here */}
-                <section>
+                <section className="mx-3 lg:mx-0">
                     <nav>
                         <ul className="flex">
                             <li>
                                 <a href="#" className="text-gray-600 hover:text-gray-800">Home</a>
                             </li>
                             <li className="mx-2">
-                                <IoIosArrowForward classNameName="inline-block" />
+                                <IoIosArrowForward className="inline-block" />
                             </li>
                             <li>
                                 <a href="#" className="text-gray-600 hover:text-gray-800">Products</a>
                             </li>
                             <li className="mx-2">
-                                <IoIosArrowForward classNameName="inline-block" />
+                                <IoIosArrowForward className="inline-block" />
                             </li>
                             <li>
                                 <a href="#" className="text-gray-600 hover:text-gray-800">Product Name</a>
                             </li>
                         </ul>
                     </nav>
+
+                    {/* banner area======================> */}
+                    <div className="relative">
+                        <div>
+                            <img className="w-full h-96 md:h-auto mt-8 rounded-xl" src="https://media.istockphoto.com/id/1289226223/vector/organic-grocery-shopping-web-banner-design-for-store-online-market-home-delivery-line-vector.jpg?s=612x612&w=0&k=20&c=ID9loDx497I65NlYnCvdmCHfc1WUj1rF5ztcZ3oYrQo=" alt="" />
+                        </div>
+                        <div className="absolute left-0 bottom-0 bg-slate-800 text-white w-full rounded-b-xl px-5 py-10">
+                            <div className="grid sm:grid-cols-5 gap-3 relative">
+                                <div className="sm:col-span-1 -mt-20">
+                                    <img className="w-28 h-28 rounded-full mb-3" src="https://portotheme.com/html/wolmart/assets/images/vendor/brand/2-100x100.png" alt="" />
+
+                                    {/* star ratings */}
+                                    <div>
+                                        <div className="flex items-center space-x-1 mx-1">
+                                            <input type="radio" name="rating" value="1" id="rating1" className="sr-only" />
+                                            <label for="rating1" className="text-lg text-yellow-400 cursor-pointer">&#9733;</label>
+
+                                            <input type="radio" name="rating" value="2" id="rating2" className="sr-only" />
+                                            <label for="rating2" className="text-lg text-yellow-400 cursor-pointer">&#9733;</label>
+
+                                            <input type="radio" name="rating" value="3" id="rating3" className="sr-only" />
+                                            <label for="rating3" className="text-lg text-yellow-400 cursor-pointer">&#9733;</label>
+
+                                            <input type="radio" name="rating" value="4" id="rating4" className="sr-only" />
+                                            <label for="rating4" className="text-lg text-yellow-400 cursor-pointer">&#9733;</label>
+
+                                            <input type="radio" name="rating" value="5" id="rating5" className="sr-only" />
+                                            <label for="rating5" className="text-lg text-yellow-400 cursor-pointer">&#9733;</label>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div className="sm:col-span-4">
+                                    <h2 className="text-lg font-bold">Vendor 1</h2>
+
+                                    <ul>
+                                        <li className="flex items-center gap-2 mt-3">
+                                            <BiMap />
+                                            <p> Street1, Street2, Great Area, California, United States (US), 92090El Carjon,
+                                            </p>
+                                        </li>
+                                        <li className="flex items-center gap-2 mt-2">
+                                            <BsTelephone />
+                                            <p>0010791263496</p>
+                                        </li>
+                                        <li className="flex items-center gap-2 mt-2">
+                                            <AiOutlineMail />
+                                            <p>wc.vendor@gmail.com</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className="sm:absolute right-5 bottom-0">
+                                    <div className="flex items-center gap-4">
+                                        <button className="flex items-center gap-2 border rounded px-2 py-1">
+                                            <BiStore style={{ fontSize: "13px" }} /> <small>Follow</small>
+                                        </button>
+                                        <button className="flex items-center gap-2 border rounded px-2 py-1">
+                                            <BsChatLeftText style={{ fontSize: "13px" }} /> <small>Message</small>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </section>
 
                 {/* header banner and Breadcrumbs section end here */}
