@@ -3,10 +3,11 @@ import { IoIosArrowForward } from 'react-icons/io';
 import { BiMap, BiStore } from 'react-icons/bi';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsTelephone, BsChatLeftText } from 'react-icons/bs';
+import CategoriesProductCard from '../categories/CategoriesProductCard';
 
 const VendorShopPage = () => {
     // states for store main layout buttons
-    const [isHome, setIsHome] = useState(false);
+    const [isHome, setIsHome] = useState(true);
     const [isAllProducts, setIsAllProducts] = useState(false);
     const [isProfile, setIsProfile] = useState(false);
 
@@ -365,10 +366,26 @@ const VendorShopPage = () => {
                                 {
                                     isHome && <div>
 
-                                        <h2>homepage</h2>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, dolor.
+                                        <section className="mt-10">
+                                            <h1 className="mb-5"><span className="font-bold text-red-500">Best</span> selling product all time</h1>
+                                            <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-5">
 
+                                                {/* this card imported from categoriesProductCard */}
 
+                                                <CategoriesProductCard />
+                                                <CategoriesProductCard />
+                                                <CategoriesProductCard />
+                                                <CategoriesProductCard />
+                                                <CategoriesProductCard />
+                                                <CategoriesProductCard />
+                                                <CategoriesProductCard />
+                                                <CategoriesProductCard />
+
+                                            </div>
+                                            <div className="flex justify-center mt-14">
+                                                <button className="border border-red-500 md:px-20 lg:px-32 p-2">Load More</button>
+                                            </div>
+                                        </section>
 
                                     </div>
                                 }
