@@ -4,6 +4,7 @@ import { BiMap, BiStore } from 'react-icons/bi';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsTelephone, BsChatLeftText } from 'react-icons/bs';
 import CategoriesProductCard from '../categories/CategoriesProductCard';
+import { GrApps, GrMoreVertical, GrMenu } from "react-icons/gr";
 
 const VendorShopPage = () => {
     // states for store main layout buttons
@@ -398,9 +399,35 @@ const VendorShopPage = () => {
 
                                 {
                                     isAllProducts && <div>
-                                        <h1>all products</h1>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, dolor.
+                                        <header className="mt-10">
+                                            <div className=" flex flex-wrap items-center justify-between gap-9 ">
+                                                <div className="flex flex-wrap items-center gap-4">
+                                                    <div>
+                                                        <p>Short by:</p>
+                                                    </div>
+                                                    <div>
+                                                        <select
+                                                            className="block px-4 py-2  rounded-md shadow-sm outline-none border w-44"
+                                                        >
+                                                            <option value="">Select an option</option>
+                                                            <option value="option1">Option 1</option>
+                                                            <option value="option2">Option 2</option>
+                                                            <option value="option3">Option 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div className="flex items-center gap-4">
+                                                    <p>View:</p>
+                                                    <div className="flex items-center gap-3">
+                                                        <button><GrApps /></button>
+                                                        <button className="flex"><GrMoreVertical /><GrMenu className="-ml-2" /></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </header>
+                                        <main>
 
+                                        </main>
 
                                     </div>
                                 }
