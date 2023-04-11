@@ -61,7 +61,7 @@ const VendorShopPage = () => {
                     <div className="relative">
                         <div>
                             <img
-                                className="w-full h-96 md:h-auto mt-8 rounded-xl" src="https://previews.123rf.com/images/varijanta/varijanta1601/varijanta160100046/51310252-thin-line-flat-design-banner-of-online-shopping-e-commerce-m-commerce-modern-vector-illustration.jpg" alt="storeBanner" />
+                                className="w-full h-96 object-cover mt-8 rounded-xl" src="https://previews.123rf.com/images/varijanta/varijanta1601/varijanta160100046/51310252-thin-line-flat-design-banner-of-online-shopping-e-commerce-m-commerce-modern-vector-illustration.jpg" alt="storeBanner" />
                         </div>
                         <div style={{ background: "rgba(0, 0, 0, 0.73)" }} className="absolute left-0 bottom-0 text-white w-full rounded-b-xl px-5 py-5 sm:py-10">
                             <div className="grid sm:grid-cols-5 gap-3 relative">
@@ -131,34 +131,112 @@ const VendorShopPage = () => {
 
                 {/* store main layout start here */}
                 <section className="mt-10">
-                    <header>
-                        <ul className="flex items-center gap-5 text-sm font-bold">
-                            <li
-                                onClick={handleHomeBtn}
-                                className={isHome ? "border-b-2 border-red-500" : "hover:border-b-2 border-red-500"}
-                            >
-                                <button>Home</button>
-                            </li>
-                            <li
-                                onClick={handleAllProductsBtn}
-                                className={isAllProducts ? "border-b-2 border-red-500" : "hover:border-b-2 border-red-500"}
-                            >
-                                <button>All Products</button>
-                            </li>
-                            <li
-                                onClick={handleProfilePage}
-                                className={isProfile ? "border-b-2 border-red-500" : "hover:border-b-2 border-red-500"}
-                            >
-                                <button>Profile</button>
-                            </li>
-                        </ul>
-                    </header>
                     <main className="grid lg:grid-cols-6 gap-5 mt-5">
-                        <div className="lg:col-span-1">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate itaque aliquid, dolor reiciendis quae quam eius debitis sequi ipsam natus.
+                        <aside className="lg:col-span-1">
+                            <div>
+                                <h1 className="text-sm mb-3">Category</h1>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <p className="text-xs mt-1 text-slate-500" >Casual Shirts</p>
+                                            <p className="text-xs mt-1 text-slate-500" >Mens Shirts</p>
+                                            <p className="text-xs mt-1 text-slate-500" >Mens Shirts</p>
+                                            <p className="text-xs mt-1 text-slate-500" >Mens Shirts</p>
+                                            <p className="text-xs mt-1 text-slate-500" >Mens Shirts</p>
+                                            <p className="text-xs mt-1 text-slate-500" >Mens Shirts</p>
+                                            <p className="text-xs mt-1 text-slate-500" >Mens Shirts</p>
+                                        </li>
+                                    </ul>
+                                </div>
 
-                        </div>
+                                <hr className="my-5" />
+
+                                <div>
+                                    <h1 className="text-sm mb-3">Brand</h1>
+                                    <div>
+                                        <ul>
+                                            <li className="flex items-center gap-2">
+                                                <input type="checkbox" name="" id="brand" />
+                                                <label htmlFor="brand" className="text-xs">Arong</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <hr className="my-5" />
+
+                                <div>
+                                    <h1 className="text-sm mb-3">Service</h1>
+                                    <div>
+                                        <ul>
+                                            <li className="flex items-center gap-2">
+                                                <input type="checkbox" name="" id="cash" />
+                                                <label htmlFor="cash" className="text-xs">Cash on delivery</label>
+                                            </li>
+                                            <li className="flex items-center gap-2">
+                                                <input type="checkbox" name="" id="free" />
+                                                <label htmlFor="free" className="text-xs">Free shipping</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <hr className="my-5" />
+
+                                <div>
+                                    <h1 className="text-sm mb-3">Location</h1>
+                                    <div>
+                                        <ul>
+                                            <li className="flex items-center gap-2">
+                                                <input type="checkbox" name="" id="bangladesh" />
+                                                <label htmlFor="bangladesh" className="text-xs">Bangladesh</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <hr className="my-5" />
+
+                                <div>
+                                    <h1 className="text-sm mb-3">Price</h1>
+                                    <div className="flex items-center gap-2">
+                                        <input className="border rounded p-1 w-full" placeholder="0" type="number" />
+                                        <p>-</p>
+                                        <input className="border rounded p-1 w-full" placeholder="250" type="number" />
+                                    </div>
+                                </div>
+
+                                <hr className="my-5" />
+
+                                <div>
+
+                                </div>
+
+                            </div>
+                        </aside>
                         <div className="lg:col-span-5">
+                            <header>
+                                <ul className="flex items-center gap-5 text-sm font-bold">
+                                    <li
+                                        onClick={handleHomeBtn}
+                                        className={isHome ? "border-b-2 border-red-500" : "hover:border-b-2 border-red-500"}
+                                    >
+                                        <button>Home</button>
+                                    </li>
+                                    <li
+                                        onClick={handleAllProductsBtn}
+                                        className={isAllProducts ? "border-b-2 border-red-500" : "hover:border-b-2 border-red-500"}
+                                    >
+                                        <button>All Products</button>
+                                    </li>
+                                    <li
+                                        onClick={handleProfilePage}
+                                        className={isProfile ? "border-b-2 border-red-500" : "hover:border-b-2 border-red-500"}
+                                    >
+                                        <button>Profile</button>
+                                    </li>
+                                </ul>
+                            </header>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate itaque aliquid, dolor reiciendis quae quam eius debitis sequi ipsam natus.
                         </div>
                     </main>
