@@ -9,6 +9,8 @@ import MobileSidebarNav from '@/components/header/mobileSidebarNav/MobileSidebar
 import MobileSearchDropdown from '@/components/MobileSearchDropdown/MobileSearchDropdown'
 import Main from './home/Main'
 import Categories from './categories/Categories'
+import VendorSignUpPage from './vendor/vendorSignUpPage'
+import VendorShopPage from './vendor/VendorShopPage'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -70,7 +72,23 @@ export default function Home() {
         {/* <Main /> */}
 
         {/* category page */}
-        <Categories />
+        {/* <Categories /> */}
+
+
+        {/* vendor =================================> */}
+
+
+
+        {/* vendor shop page */}
+        <VendorShopPage />
+
+
+
+
+
+
+
+        {/* vendor =================================!> */}
 
 
         <AccountCreateModalForm handleCloseModal={handleCloseModal} handleOpenModal={handleOpenModal} handleOverlayClick={handleOverlayClick} isOpen={isOpen} />
