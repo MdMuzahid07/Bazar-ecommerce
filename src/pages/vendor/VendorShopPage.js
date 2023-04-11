@@ -36,14 +36,14 @@ const VendorShopPage = () => {
                         <div>
                             <img className="w-full h-96 md:h-auto mt-8 rounded-xl" src="https://media.istockphoto.com/id/1289226223/vector/organic-grocery-shopping-web-banner-design-for-store-online-market-home-delivery-line-vector.jpg?s=612x612&w=0&k=20&c=ID9loDx497I65NlYnCvdmCHfc1WUj1rF5ztcZ3oYrQo=" alt="" />
                         </div>
-                        <div className="absolute left-0 bottom-0 bg-slate-800 text-white w-full rounded-b-xl px-5 py-10">
+                        <div className="absolute left-0 bottom-0 bg-slate-800 text-white w-full rounded-b-xl px-5 py-5 sm:py-10">
                             <div className="grid sm:grid-cols-5 gap-3 relative">
-                                <div className="sm:col-span-1 -mt-20">
-                                    <img className="w-28 h-28 rounded-full mb-3" src="https://portotheme.com/html/wolmart/assets/images/vendor/brand/2-100x100.png" alt="" />
+                                <div className="sm:col-span-1 -mt-14 sm:-mt-20">
+                                    <img className="w-16 sm:w-28  rounded-full mb-3" src="https://portotheme.com/html/wolmart/assets/images/vendor/brand/2-100x100.png" alt="" />
 
                                     {/* star ratings */}
                                     <div>
-                                        <div className="flex items-center space-x-1 mx-1">
+                                        <div className="flex items-center space-x-1 sm:mx-1">
                                             <input type="radio" name="rating" value="1" id="rating1" className="sr-only" />
                                             <label for="rating1" className="text-lg text-yellow-400 cursor-pointer">&#9733;</label>
 
@@ -84,10 +84,10 @@ const VendorShopPage = () => {
                                 </div>
                                 <div className="sm:absolute right-5 bottom-0">
                                     <div className="flex items-center gap-4">
-                                        <button className="flex items-center gap-2 border rounded px-2 py-1">
+                                        <button className="flex items-center gap-2 border hover:border-yellow-700 rounded px-2 py-1 hover:text-yellow-700 active:font-bold">
                                             <BiStore style={{ fontSize: "13px" }} /> <small>Follow</small>
                                         </button>
-                                        <button className="flex items-center gap-2 border rounded px-2 py-1">
+                                        <button className="flex items-center gap-2 border hover:border-yellow-700 rounded px-2 py-1 hover:text-yellow-700 active:font-bold">
                                             <BsChatLeftText style={{ fontSize: "13px" }} /> <small>Message</small>
                                         </button>
                                     </div>
