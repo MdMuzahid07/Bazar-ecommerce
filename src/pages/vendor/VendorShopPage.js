@@ -494,8 +494,32 @@ const VendorShopPage = () => {
 
 
                                             {/* seller analytics */}
-                                            <section>
-
+                                            <section className="mt-7">
+                                                <div className="grid md:grid-cols-3 gap-5 p-5 bg-slate-50">
+                                                    <div className="flex items-center justify-center md:border-r-2">
+                                                        <div>
+                                                            <h3>Joined</h3>
+                                                            <h1 className="text-sm mt-3"><span className="text-2xl font-bold text-green-500">3+</span> years</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div className="flex items-center justify-center md:border-r-2">
+                                                        <div>
+                                                            <h3>Shipped on time</h3>
+                                                            <h1 className="mt-3 text-sm"><span className="text-2xl font-bold text-green-500">98%</span> this is average for sellers in <br /> same category </h1>
+                                                        </div>
+                                                    </div>
+                                                    <div className="flex items-center justify-center">
+                                                        <div>
+                                                            <h3>Chat</h3>
+                                                            <h1 className="text-sm mt-3">
+                                                                <span>Chat response rate</span> <br />
+                                                                <span className="text-green-500" >98.30%</span> <br />
+                                                                <span>Last active</span> <br />
+                                                                <span className="text-green-500" >Active in: 1 hour</span>
+                                                            </h1>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </section>
 
                                         </section>
