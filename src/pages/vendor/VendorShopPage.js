@@ -574,7 +574,134 @@ const VendorShopPage = () => {
                                                         <p><small>Based on 22996 customer reviews</small></p>
                                                     </div>
                                                     <div className="md:col-span-5">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quaerat dolor ex sequi odio! Ullam nostrum optio non possimus laudantium?
+                                                        <h2 className="text-sm font-bold mb-2">Product Ratings and Reviews(18992)</h2>
+                                                        <div>
+                                                            <hr className="my-3" />
+                                                            {/* rating and review card start here */}
+
+                                                            <div className="py-5">
+                                                                <div className="flex gap-5">
+                                                                    <img className="w-14 h-14 object-cover rounded-lg" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="product_Image" />
+                                                                    <div>
+                                                                        <div>
+                                                                            <h2 className="leading-3	">Product Name</h2>
+                                                                            <p className="leading-3	"><small>color:black,size:m</small></p>
+                                                                        </div>
+                                                                        <div className="mt-3">
+                                                                            <div className="flex items-center">
+                                                                                <input type="radio" name="rating" value="1" id="rating1" className="sr-only" />
+                                                                                <label for="rating1" className="text-lg text-yellow-400 cursor-pointer">&#9733;</label>
+
+                                                                                <input type="radio" name="rating" value="2" id="rating2" className="sr-only" />
+                                                                                <label for="rating2" className="text-lg text-yellow-400 cursor-pointer">&#9733;</label>
+
+                                                                                <input type="radio" name="rating" value="3" id="rating3" className="sr-only" />
+                                                                                <label for="rating3" className="text-lg text-yellow-400 cursor-pointer">&#9733;</label>
+
+                                                                                <input type="radio" name="rating" value="4" id="rating4" className="sr-only" />
+                                                                                <label for="rating4" className="text-lg text-yellow-400 cursor-pointer">&#9733;</label>
+
+                                                                                <input type="radio" name="rating" value="5" id="rating5" className="sr-only" />
+                                                                                <label for="rating5" className="text-lg text-yellow-400 cursor-pointer">&#9733;</label>
+                                                                            </div>
+                                                                            <h2>this is an amazing product, and delivery was so</h2>
+                                                                        </div>
+                                                                        <div className="flex flex-wrap items-center gap-5 mt-4">
+                                                                            <img className="w-14 h-14 object-cover" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="" />
+                                                                            <img className="w-14 h-14 object-cover" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="" />
+                                                                            <img className="w-14 h-14 object-cover" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="" />
+                                                                            <img className="w-14 h-14 object-cover" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="" />
+                                                                            <img className="w-14 h-14 object-cover" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="" />
+                                                                            <img className="w-14 h-14 object-cover" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="" />
+                                                                            <img className="w-14 h-14 object-cover" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <hr className="mt-3" />
+                                                            </div>
+                                                            <div className="py-5">
+                                                                <div className="flex gap-5">
+                                                                    <img className="w-14 h-14 object-cover rounded-lg" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="product_Image" />
+                                                                    <div>
+                                                                        <div>
+                                                                            <h2 className="leading-3	">Product Name</h2>
+                                                                            <p className="leading-3	"><small>color:black,size:m</small></p>
+                                                                        </div>
+                                                                        <div className="mt-3">
+                                                                            <div className="flex items-center">
+                                                                                <input type="radio" name="rating" value="1" id="rating1" className="sr-only" />
+                                                                                <label for="rating1" className="text-lg text-yellow-400 cursor-pointer">&#9733;</label>
+
+                                                                                <input type="radio" name="rating" value="2" id="rating2" className="sr-only" />
+                                                                                <label for="rating2" className="text-lg text-yellow-400 cursor-pointer">&#9733;</label>
+
+                                                                                <input type="radio" name="rating" value="3" id="rating3" className="sr-only" />
+                                                                                <label for="rating3" className="text-lg text-yellow-400 cursor-pointer">&#9733;</label>
+
+                                                                                <input type="radio" name="rating" value="4" id="rating4" className="sr-only" />
+                                                                                <label for="rating4" className="text-lg text-yellow-400 cursor-pointer">&#9733;</label>
+
+                                                                                <input type="radio" name="rating" value="5" id="rating5" className="sr-only" />
+                                                                                <label for="rating5" className="text-lg text-yellow-400 cursor-pointer">&#9733;</label>
+                                                                            </div>
+                                                                            <h2>this is an amazing product, and delivery was so</h2>
+                                                                        </div>
+                                                                        <div className="flex flex-wrap items-center gap-5 mt-4">
+                                                                            <img className="w-14 h-14 object-cover" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="" />
+                                                                            <img className="w-14 h-14 object-cover" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="" />
+                                                                            <img className="w-14 h-14 object-cover" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="" />
+                                                                            <img className="w-14 h-14 object-cover" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="" />
+                                                                            <img className="w-14 h-14 object-cover" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="" />
+                                                                            <img className="w-14 h-14 object-cover" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="" />
+                                                                            <img className="w-14 h-14 object-cover" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <hr className="mt-3" />
+                                                            </div>
+                                                            <div className="py-5">
+                                                                <div className="flex gap-5">
+                                                                    <img className="w-14 h-14 object-cover rounded-lg" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="product_Image" />
+                                                                    <div>
+                                                                        <div>
+                                                                            <h2 className="leading-3	">Product Name</h2>
+                                                                            <p className="leading-3	"><small>color:black,size:m</small></p>
+                                                                        </div>
+                                                                        <div className="mt-3">
+                                                                            <div className="flex items-center">
+                                                                                <input type="radio" name="rating" value="1" id="rating1" className="sr-only" />
+                                                                                <label for="rating1" className="text-lg text-yellow-400 cursor-pointer">&#9733;</label>
+
+                                                                                <input type="radio" name="rating" value="2" id="rating2" className="sr-only" />
+                                                                                <label for="rating2" className="text-lg text-yellow-400 cursor-pointer">&#9733;</label>
+
+                                                                                <input type="radio" name="rating" value="3" id="rating3" className="sr-only" />
+                                                                                <label for="rating3" className="text-lg text-yellow-400 cursor-pointer">&#9733;</label>
+
+                                                                                <input type="radio" name="rating" value="4" id="rating4" className="sr-only" />
+                                                                                <label for="rating4" className="text-lg text-yellow-400 cursor-pointer">&#9733;</label>
+
+                                                                                <input type="radio" name="rating" value="5" id="rating5" className="sr-only" />
+                                                                                <label for="rating5" className="text-lg text-yellow-400 cursor-pointer">&#9733;</label>
+                                                                            </div>
+                                                                            <h2>this is an amazing product, and delivery was so</h2>
+                                                                        </div>
+                                                                        <div className="flex flex-wrap items-center gap-5 mt-4">
+                                                                            <img className="w-14 h-14 object-cover" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="" />
+                                                                            <img className="w-14 h-14 object-cover" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="" />
+                                                                            <img className="w-14 h-14 object-cover" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="" />
+                                                                            <img className="w-14 h-14 object-cover" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="" />
+                                                                            <img className="w-14 h-14 object-cover" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="" />
+                                                                            <img className="w-14 h-14 object-cover" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="" />
+                                                                            <img className="w-14 h-14 object-cover" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <hr className="mt-3" />
+                                                            </div>
+
+                                                            {/* rating and review card end here */}
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </section>
