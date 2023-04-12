@@ -9,8 +9,9 @@ import MobileSidebarNav from '@/components/header/mobileSidebarNav/MobileSidebar
 import MobileSearchDropdown from '@/components/MobileSearchDropdown/MobileSearchDropdown'
 import Main from './home/Main'
 import Categories from './categories/Categories'
-import VendorSignUpPage from './vendor/vendorSignUpPage'
 import VendorShopPage from './vendor/VendorShopPage'
+import VendorSignUpPage from './vendor/VendorSignUpPage'
+import OrderTrackPage from './vendor/OrderTrackPage'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -79,12 +80,12 @@ export default function Home() {
 
 
 
-        {/* vendor shop page */}
-        <VendorShopPage />
+        {/* vendor shop page====================== */}
 
 
-
-
+        {/* <VendorShopPage /> */}
+        <OrderTrackPage />
+        {/* <VendorSignUpPage /> */}
 
 
 
