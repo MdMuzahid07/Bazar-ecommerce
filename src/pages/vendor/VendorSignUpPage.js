@@ -18,7 +18,7 @@ const VendorSignUpPage = () => {
                             <input className="border rounded-lg block w-full border p-1 mt-2" type="text" placeholder="+880 enter your phone number" id="phn" />
                         </div>
                         <div>
-                            <button type="submit" className="my-5 border bg-red-500 text-white rounded-lg w-full py-1">Send OTP</button>
+                            <button type="submit" className="my-5 border bg-orange-600 text-white rounded-lg w-full py-1">Send OTP</button>
                         </div>
                     </div>
                 </div>
@@ -52,11 +52,17 @@ const VendorSignUpPage = () => {
                             <input className="border rounded-lg block w-full border p-1" type="password" placeholder="min 8 character, 2 uppercase, 1 symbol" id="pass" />
                             <input className="border rounded-lg block w-full border p-1 mt-2" type="password" placeholder="confirm pass" />
                         </div>
+                        <div className="pt-4">
+                            <label htmlFor="refer">Referral Code (optional)</label>
+                            <input className="border rounded-lg block w-full border p-1" type="password" placeholder="Enter Referral code" id="refer" />
+                        </div>
+                        <div className="mt-7">
+                            <button type="submit" className=" border bg-orange-600 text-white rounded-lg w-full py-1">CREATE ACCOUNT</button>
+                        </div>
                     </div>
                 </div>
             </section>
             {/* account create form step 2, section end here */}
-
 
 
         </section>
