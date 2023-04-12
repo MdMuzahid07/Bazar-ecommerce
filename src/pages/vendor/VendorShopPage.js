@@ -493,9 +493,10 @@ const VendorShopPage = () => {
                                             </div>
 
 
+                                            {/* seller analytics */}
+                                            <section>
 
-
-
+                                            </section>
 
                                         </section>
 
