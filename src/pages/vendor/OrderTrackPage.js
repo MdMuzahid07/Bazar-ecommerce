@@ -42,7 +42,7 @@ const OrderTrackPage = () => {
                         <p className="flex items-center"><GiBoxUnpacking /> Standard Delivery</p>
                     </div>
                     <div className="my-10">
-                        <div className=" max-w-md mx-auto">
+                        <div className="max-w-lg mx-auto">
                             <div className="w-full h-4  bg-gray-300 rounded-full">
                                 <div className="h-full bg-yellow-500 rounded-full transition-all duration-500" style={{ width: `${50}%` }}></div>
                             </div>
@@ -51,6 +51,33 @@ const OrderTrackPage = () => {
                                 <p><small>Shipped</small></p>
                                 <p><small>Delivered</small></p>
                             </div>
+                            <div className="bg-slate-100 rounded-xl p-5 mt-5">
+                                <ul>
+                                    <li>
+                                        <small> <span>13 Mar 2023 - 13:29</span> Your package has been delivered. Thank you for shopping at Daraz! </small>
+                                    </li>
+                                    <li>
+                                        <small> <span>13 Mar 2023 - 13:29</span> Your package has been delivered. Thank you for shopping at Daraz! </small>
+                                    </li>
+                                    <li>
+                                        <small> <span>13 Mar 2023 - 13:29</span> Your package has been delivered. Thank you for shopping at Daraz! </small>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div className="flex items-center justify-between mt-16">
+                            <div className="flex items-center gap-2">
+                                <img className="w-20 h-20 object-cover border" src="https://static-01.daraz.com.bd/p/a4c23549a21c5f759d9c8da1d12b37e4.jpg_200x200q90.jpg_.webp" alt="" />
+                                <div>
+                                    <a href=""><small>No Body jocker Laptop Sticker Laptop Skin Sticker & Laptop Skin for laptop Back Side Decoration</small></a>
+                                    <p><small>No Warranty Available</small></p>
+                                </div>
+                            </div>
+                            <p>$118</p>
+                            <p>Q: 1</p>
+                            <button>Write a review</button>
                         </div>
                     </div>
                 </div>
@@ -58,6 +85,16 @@ const OrderTrackPage = () => {
             </div>
 
             {/* package section end here */}
+
+
+
+            {/* user info for product delivery, section start here */}
+
+            <section>
+
+            </section>
+
+            {/* user info for product delivery, section end here */}
 
         </section>
     );
