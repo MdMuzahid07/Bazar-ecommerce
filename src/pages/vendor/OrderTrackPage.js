@@ -90,8 +90,56 @@ const OrderTrackPage = () => {
 
             {/* user info for product delivery, section start here */}
 
-            <section>
-
+            <section className=" grid lg:grid-cols-2 gap-5 my-7">
+                <div className="bg-white p-4">
+                    <h2>Shipping address</h2>
+                    <div>
+                        <p className="font-bold">Elon</p>
+                        <div className="flex items-center gap-2">
+                            <span className="bg-red-500 text-white rounded-full text-xs font-bold px-2">Home</span>
+                            <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, corporis.</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div className="bg-white p-4">
+                    <h2 className="mb-2">Total summary</h2>
+                    <div>
+                        <ul>
+                            <li className="flex items-center justify-between text-xs mb-1">
+                                <p>Subtotal</p>
+                                <p>100</p>
+                            </li>
+                            <li className="flex items-center justify-between text-xs mb-1">
+                                <p>Delivery Fee</p>
+                                <p>100</p>
+                            </li>
+                            <li className="flex items-center justify-between text-xs mb-1">
+                                <p>Cash Payment Fee</p>
+                                <p>100</p>
+                            </li>
+                        </ul>
+                        <hr className="my-3" />
+                        <div>
+                            <ul>
+                                <li className="flex items-center justify-between text-xs mb-1">
+                                    <p>Total</p>
+                                    <p>100</p>
+                                </li>
+                                <li className="mt-2 text-sm font-bold text-red-500">
+                                    <p>Paid By Cash On Delivery</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div className="bg-white p-4">
+                    <h2>Billing address</h2>
+                    <p className="font-bold">Elon</p>
+                    <div className="flex items-center gap-2">
+                        <span className="bg-red-500 text-white rounded-full text-xs font-bold px-2">Home</span>
+                        <p><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, corporis.</small></p>
+                    </div>
+                </div>
             </section>
 
             {/* user info for product delivery, section end here */}
