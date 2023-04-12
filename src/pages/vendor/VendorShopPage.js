@@ -581,7 +581,7 @@ const VendorShopPage = () => {
 
                                                             <div className="py-5">
                                                                 <div className="flex gap-5">
-                                                                    <img className="w-14 h-14 object-cover rounded-lg" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="product_Image" />
+                                                                    <img className="w-14 h-14 object-cover" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="product_Image" />
                                                                     <div>
                                                                         <div>
                                                                             <h2 className="leading-3	">Product Name</h2>
@@ -621,7 +621,7 @@ const VendorShopPage = () => {
                                                             </div>
                                                             <div className="py-5">
                                                                 <div className="flex gap-5">
-                                                                    <img className="w-14 h-14 object-cover rounded-lg" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="product_Image" />
+                                                                    <img className="w-14 h-14 object-cover" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="product_Image" />
                                                                     <div>
                                                                         <div>
                                                                             <h2 className="leading-3	">Product Name</h2>
@@ -661,7 +661,7 @@ const VendorShopPage = () => {
                                                             </div>
                                                             <div className="py-5">
                                                                 <div className="flex gap-5">
-                                                                    <img className="w-14 h-14 object-cover rounded-lg" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="product_Image" />
+                                                                    <img className="w-14 h-14 object-cover" src="https://static-01.daraz.com.bd/p/7b6a72fd1272a8c753df40a81bebe805.png" alt="product_Image" />
                                                                     <div>
                                                                         <div>
                                                                             <h2 className="leading-3	">Product Name</h2>
