@@ -84,8 +84,10 @@ export default function Home() {
 
 
         {/* <VendorShopPage /> */}
-        <OrderTrackPage />
-        {/* <VendorSignUpPage /> */}
+
+        {/* <OrderTrackPage /> */}
+
+        <VendorSignUpPage />
 
 
 
