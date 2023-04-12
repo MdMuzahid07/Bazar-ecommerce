@@ -41,11 +41,13 @@ const OrderTrackPage = () => {
                         <p>Delivered on 1 Mar 2023</p>
                         <p className="flex items-center"><GiBoxUnpacking /> Standard Delivery</p>
                     </div>
-
-                    <div>
-
+                    <div className="my-10">
+                        <div className=" max-w-md mx-auto">
+                            <div className="w-full h-4  bg-gray-300 rounded-full">
+                                <div className="h-full bg-yellow-500 rounded-full transition-all duration-500" style={{ width: `${100}%` }}></div>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
 
             </div>
