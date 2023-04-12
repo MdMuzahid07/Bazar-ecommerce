@@ -493,22 +493,22 @@ const VendorShopPage = () => {
                                             </div>
 
 
-                                            {/* seller analytics */}
+                                            {/* seller analytics section start here */}
                                             <section className="mt-7">
-                                                <div className="grid md:grid-cols-3 gap-5 p-5 bg-slate-50">
-                                                    <div className="flex items-center justify-center md:border-r-2">
+                                                <div className="grid sm:grid-cols-3 gap-5 p-5 bg-slate-50">
+                                                    <div className="sm:flex sm:items-center sm:justify-center border-b-2 sm:border-b-0 pb-2 sm:pb-0 sm:border-r-2">
                                                         <div>
                                                             <h3>Joined</h3>
                                                             <h1 className="text-sm mt-3"><span className="text-2xl font-bold text-green-500">3+</span> years</h1>
                                                         </div>
                                                     </div>
-                                                    <div className="flex items-center justify-center md:border-r-2">
+                                                    <div className="sm:flex sm:items-center sm:justify-center border-b-2 sm:border-b-0 pb-2 sm:pb-0 sm:border-r-2">
                                                         <div>
                                                             <h3>Shipped on time</h3>
                                                             <h1 className="mt-3 text-sm"><span className="text-2xl font-bold text-green-500">98%</span> this is average for sellers in <br /> same category </h1>
                                                         </div>
                                                     </div>
-                                                    <div className="flex items-center justify-center">
+                                                    <div className="sm:flex sm:items-center border-b-2 sm:border-b-0 pb-2 sm:pb-0 sm:justify-center">
                                                         <div>
                                                             <h3>Chat</h3>
                                                             <h1 className="text-sm mt-3">
@@ -521,6 +521,66 @@ const VendorShopPage = () => {
                                                     </div>
                                                 </div>
                                             </section>
+                                            {/* seller analytics section end here */}
+
+                                            {/* Positive seller ratings section start here */}
+
+                                            <section className="mt-10">
+                                                <div className="grid md:grid-cols-7 gap-5 bg-slate-50 p-5">
+                                                    <div className="md:col-span-2">
+                                                        <div>
+                                                            <h2 className="text-sm font-bold mb-2">Positive Seller Ratings</h2>
+                                                            <h3 className=" text-5xl ">87%</h3>
+                                                            <p className="bg-yellow-400 inline"><small>Positive Ratings</small></p>
+                                                        </div>
+                                                        <div className="mt-7">
+                                                            <div className="grid grid-cols-5 gap-2
+                                                            ">
+                                                                <div className="col-span-1">
+                                                                    <p><small>Positive</small></p>
+                                                                </div>
+                                                                <div className="col-span-3">
+                                                                    <progress className="w-full" value="90" max="100"></progress>
+                                                                </div>
+                                                                <div className="col-span-1">
+                                                                    <p><small>20008</small></p>
+                                                                </div>
+                                                            </div>
+                                                            <div className="grid grid-cols-5 gap-2
+                                                            ">
+                                                                <div className="col-span-1">
+                                                                    <p><small>Neutral</small></p>
+                                                                </div>
+                                                                <div className="col-span-3">
+                                                                    <progress className="w-full" value="10" max="100"></progress>
+                                                                </div>
+                                                                <div className="col-span-1">
+                                                                    <p><small>1258</small></p>
+                                                                </div>
+                                                            </div>
+                                                            <div className="grid grid-cols-5 gap-2
+                                                            ">
+                                                                <div className="col-span-1">
+                                                                    <p><small>Negative</small></p>
+                                                                </div>
+                                                                <div className="col-span-3">
+                                                                    <progress className="w-full" value="20" max="100"></progress>
+                                                                </div>
+                                                                <div className="col-span-1">
+                                                                    <p><small>1730</small></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p><small>Based on 22996 customer reviews</small></p>
+                                                    </div>
+                                                    <div className="md:col-span-5">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quaerat dolor ex sequi odio! Ullam nostrum optio non possimus laudantium?
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            {/* Positive seller ratings section end here */}
+
+
 
                                         </section>
 
@@ -537,9 +597,9 @@ const VendorShopPage = () => {
                 </section>
                 {/* store main layout end here */}
 
-            </div>
+            </div >
 
-        </section>
+        </section >
     );
 };
 
