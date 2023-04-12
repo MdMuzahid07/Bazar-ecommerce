@@ -44,7 +44,12 @@ const OrderTrackPage = () => {
                     <div className="my-10">
                         <div className=" max-w-md mx-auto">
                             <div className="w-full h-4  bg-gray-300 rounded-full">
-                                <div className="h-full bg-yellow-500 rounded-full transition-all duration-500" style={{ width: `${100}%` }}></div>
+                                <div className="h-full bg-yellow-500 rounded-full transition-all duration-500" style={{ width: `${50}%` }}></div>
+                            </div>
+                            <div className="flex items-center justify-between">
+                                <p><small>Processing</small></p>
+                                <p><small>Shipped</small></p>
+                                <p><small>Delivered</small></p>
                             </div>
                         </div>
                     </div>
