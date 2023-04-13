@@ -1,70 +1,72 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { GrLanguage } from 'react-icons/gr';
 
 const VendorSignUpPage = () => {
+    // for header language state
+    const [isOpen, setIsOpen] = useState(false);
+
+
     return (
-        <section className="max-w-6xl mx-auto">
+        <section>
+            <header>
+                <div className="bg-white w-full">
+                    <div className="max-w-6xl mx-auto py-5   border">
+                        <div className="flex flex-wrap justify-center md:justify-between items-center gap-5">
+                            <div className="flex items-center">
+                                <div>
+                                    <img className="w-32" src="https://icms-image.slatic.net/images/ims-web/bfe8de2c-b737-42ab-b1f1-576042ab0412.png" alt="" />
+                                </div>
 
+                                <div className="relative inline-block text-left">
+                                    <div>
+                                        <button
+                                            type="button"
+                                            className="inline-flex justify-center w-full  px-2 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 "
+                                            id="options-menu"
+                                            aria-haspopup="true"
+                                            aria-expanded="true"
+                                            onClick={() => setIsOpen(!isOpen)}
+                                        >
+                                            <div className="flex items-center gap-2">
+                                                <GrLanguage />
+                                                <p><small>{`bangla`}</small></p>
+                                                <img className="w-7" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/800px-Flag_of_Bangladesh.svg.png" alt="" />
 
-            {/* account create form step 1, section start here */}
-            <section className="my-7">
-                <div className="max-w-sm bg-white p-4 rounded-xl">
-                    <div>
-                        <h1 className="text-center text-2xl mb-2">Create an account</h1>
-                        <p className="text-center text-sm mb-5 md:px-3">Welcome! Millions of Daraz users are waiting to buy your product.</p>
-                    </div>
-                    <div>
-                        <div className="pt-4">
-                            <label htmlFor="phn">Phone</label>
-                            <input className="border rounded-lg block w-full border p-1 mt-2" type="text" placeholder="+880 enter your phone number" id="phn" />
-                        </div>
-                        <div>
-                            <button type="submit" className="my-5 border bg-orange-600 text-white rounded-lg w-full py-1">Send OTP</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            {/* account create form step 1, section end here */}
+                                                <div className="flex">
+                                                    <small>{`Bangladesh`}</small>
+                                                    {/* Show/hide the dropdown arrow based on whether the dropdown is open */}
+                                                    <svg className={`ml-2 h-5 w-5 ${isOpen ? '-rotate-180' : 'rotate-0'}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                                        <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                                                    </svg>
+                                                </div>
+                                            </div>
 
-
-
-
-            {/* account create form step 2, section start here */}
-            <section className="my-7">
-                <div className="max-w-sm bg-white p-4 rounded-xl">
-                    <div>
-                        <h1 className="text-center text-2xl mb-2">Create an account</h1>
-                        <p className="text-center text-sm mb-5 md:px-3">Welcome! Millions of Daraz users are waiting to buy your product.</p>
-                    </div>
-                    <div>
-                        <div>
-                            <input className="border rounded-lg block w-full border p-1 mt-2" type="text" placeholder="+880 enter your phone number" id="phn" />
-                        </div>
-                        <div className="pt-4">
-                            <p>Verification</p>
-                            <label htmlFor="very"><small>The verification code has been sent to +88039123946123946</small></label>
-                            <div className="relative">
-                                <input className="border rounded-lg block w-full border p-1" type="text" placeholder="enter verification code" id="very" />
-                                <button className="absolute right-3 top-2 text-slate-400 text-xs font-bold ">Send</button>
+                                        </button>
+                                    </div>
+                                    {/* Conditionally render the dropdown menu based on whether the dropdown is open */}
+                                    {isOpen && (
+                                        <div className="origin-top-right absolute left-0 mt-2 w-44 z-50 bg-white border rounded">
+                                            <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                                                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Bangladesh</a>
+                                                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Pakistan</a>
+                                            </div>
+                                        </div>
+                                    )}
+                                </div>
+                            </div>
+                            <div>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut quos nihil
                             </div>
                         </div>
-                        <div className="pt-4">
-                            <label htmlFor="pass">Setup Password</label>
-                            <input className="border rounded-lg block w-full border p-1" type="password" placeholder="min 8 character, 2 uppercase, 1 symbol" id="pass" />
-                            <input className="border rounded-lg block w-full border p-1 mt-2" type="password" placeholder="confirm pass" />
-                        </div>
-                        <div className="pt-4">
-                            <label htmlFor="refer">Referral Code (optional)</label>
-                            <input className="border rounded-lg block w-full border p-1" type="password" placeholder="Enter Referral code" id="refer" />
-                        </div>
-                        <div className="mt-7">
-                            <button type="submit" className=" border bg-orange-600 text-white rounded-lg w-full py-1">CREATE ACCOUNT</button>
-                        </div>
                     </div>
                 </div>
-            </section>
-            {/* account create form step 2, section end here */}
+            </header>
+            <main>
 
+            </main>
+            <footer>
 
+            </footer>
         </section>
     );
 };
