@@ -5,6 +5,9 @@ import { FaGooglePlay, FaAppStoreIos } from 'react-icons/fa';
 
 
 const VendorSignUpPage = () => {
+    // this state for FAQ accordion
+    const [accordionIsOpen, setAccordionIsOpen] = useState(false);
+
     // for header language state
     const [isOpen, setIsOpen] = useState(false);
 
@@ -518,6 +521,83 @@ const VendorSignUpPage = () => {
 
                 {/* Use the free Daraz Seller App section end here */}
 
+
+
+
+
+                {/* Frequently Asked Questions section start here */}
+
+                <section className="bg-white py-20">
+                    <div className="max-w-6xl mx-auto">
+                        <h2 className="text-2xl md:text-5xl mb-16 font-semibold text-center">Frequently Asked Questions</h2>
+                        <div>
+
+                            <div className="border border-gray-200 rounded-md mb-5">
+                                <div
+                                    className="p-4 flex justify-between items-center cursor-pointer bg-slate-100 rounded-lg"
+                                    onClick={() => setAccordionIsOpen(!accordionIsOpen)}
+                                >
+                                    <h2 className="text-lg font-medium">What categories can I sell on Daraz?</h2>
+                                    <svg
+                                        className={`w-6 h-6 transition-transform transform ${isOpen ? "rotate-180" : ""
+                                            }`}
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth="2"
+                                            d="M19 9l-7 7-7-7"
+                                        />
+                                    </svg>
+                                </div>
+                                {accordionIsOpen && (
+                                    <div className="p-4 border-t border-gray-200">
+                                        <p>
+                                            Daraz has over 30 main categories of goods that you can sell your products in, including fashion, electronics, FMCG, lifestyle, health & beauty to name a few. However, we do have items that are counterfeit, dangerous and prohibited by law or cultural norms which sellers must refrain from listing. Click here to learn more
+                                        </p>
+                                    </div>
+                                )}
+                            </div>
+
+
+                            <div className="border border-gray-200 rounded-md mb-5">
+                                <div
+                                    className="p-4 flex justify-between items-center cursor-pointer bg-slate-200 rounded-lg"
+                                    onClick={() => setAccordionIsOpen(!accordionIsOpen)}
+                                >
+                                    <h2 className="text-lg font-medium">What categories can I sell on Daraz?</h2>
+                                    <svg
+                                        className={`w-6 h-6 transition-transform transform ${isOpen ? "rotate-180" : ""
+                                            }`}
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth="2"
+                                            d="M19 9l-7 7-7-7"
+                                        />
+                                    </svg>
+                                </div>
+                                {accordionIsOpen && (
+                                    <div className="p-4 border-t border-gray-200">
+                                        <p>
+                                            Daraz has over 30 main categories of goods that you can sell your products in, including fashion, electronics, FMCG, lifestyle, health & beauty to name a few. However, we do have items that are counterfeit, dangerous and prohibited by law or cultural norms which sellers must refrain from listing. Click here to learn more
+                                        </p>
+                                    </div>
+                                )}
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                {/* Frequently Asked Questions section end here */}
 
 
 
