@@ -259,7 +259,7 @@ const VendorSignUpPage = () => {
                 <section className="bg-white">
                     <div className="max-w-6xl mx-auto py-20">
                         <h2 className="text-2xl md:text-6xl mb-16 font-semibold">Why Sell on Daraz? </h2>
-                        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 md:gap-16">
+                        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-7 md:gap-14">
 
                             <div className="flex items-center justify-center">
                                 <div className="flex gap-3">
@@ -327,6 +327,55 @@ const VendorSignUpPage = () => {
                 </section>
 
                 {/* Why Sell on Daraz? section end here */}
+
+
+
+                {/* img grid section start here */}
+
+                <section className="bg-white py-20">
+                    <div className="max-w-6xl mx-auto">
+                        <div className="grid md:grid-cols-2 gap-5 relative">
+                            <div className="bg-[url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQemFV2FVkGu0NsUqO5k8O86py4z5pF5vPSm_bYnGfsO7njsczG')] bg-no-repeat bg-cover bg-top rounded-2xl">
+
+                                <div className="absolute bottom-5 left-5 text-white">
+                                    <h2 className="text-2xl font-semibold">We cannot imagine doing business
+                                        <br />
+                                        without Daraz now</h2>
+                                    <div>
+                                        <div>
+                                            <h3 className="text-sm mt-2 font-semibold">Ali Khemani</h3>
+                                            <p><small>Founder, Craftsman</small></p>
+                                        </div>
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+
+                                <div className="mb-5">
+                                    <iframe className="h-48 w-full shadow rounded-t-2xl" src="https://www.youtube.com/embed/uXcCW6oW5Zw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    <div className="p-5 shadow rounded-b-2xl">
+                                        <button className="border border-red-500 rounded-lg px-5 py-2 text-red-500 mb-3">TESTIMONY</button>
+                                        <p className="text-lg">At just 16 years old, Zaid runs his own shop on Daraz where he deals in mobile accessories and other similar products. He is an inspiration to all budding entrepreneurs in the country.</p>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <iframe className="h-48 w-full shadow rounded-t-2xl" src="https://www.youtube.com/embed/uXcCW6oW5Zw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    <div className="p-5 shadow rounded-b-2xl">
+                                        <button className="border border-red-500 rounded-lg px-5 py-2 text-red-500 mb-3">TESTIMONY</button>
+                                        <p className="text-lg">At just 16 years old, Zaid runs his own shop on Daraz where he deals in mobile accessories and other similar products. He is an inspiration to all budding entrepreneurs in the country.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* img grid section end here */}
 
             </main>
             <footer>
