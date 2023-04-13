@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { GrLanguage } from 'react-icons/gr';
 import { IoIosArrowForward } from 'react-icons/io';
+import { FaGooglePlay, FaAppStoreIos } from 'react-icons/fa';
+
 
 const VendorSignUpPage = () => {
     // for header language state
@@ -469,6 +471,52 @@ const VendorSignUpPage = () => {
                 </section>
 
                 {/* learn about daraz seller signup section end here */}
+
+
+
+
+                {/* Use the free Daraz Seller App section start here */}
+
+
+                <section className="bg-white py-20">
+                    <div className="max-w-6xl mx-auto text-white">
+                        <div className="p-16 rounded-lg" style={{ background: "#F75606" }}>
+                            <p>GO MOBILE</p>
+                            <h1 className="text-2xl md:text-5xl font-bold text-wrap text-white mb-5">Use the free Daraz Seller Ap</h1>
+
+                            <p><small>The Daraz Seller app is packed with features to help you manage and grow your ecommerce business wherever you are. It gives you the freedom <br /> to take care of business details right from your phone.
+                            </small></p>
+
+                            <div className="flex gap-5 mt-5">
+                                <button >
+                                    <div className="flex items-center gap-2 border px-3 py-1 rounded">
+                                        <div>
+                                            <FaGooglePlay style={{ fontSize: "20px" }} />
+                                        </div>
+                                        <dir className="text-left leading-3	">
+                                            <p><small>Get it on</small></p>
+                                            <p className="font-bold text-xs">Google Play</p>
+                                        </dir>
+                                    </div>
+                                </button>
+                                <button >
+                                    <div className="flex items-center gap-2 border px-3 py-1 rounded">
+                                        <div>
+                                            <FaAppStoreIos style={{ fontSize: "23px" }} />
+                                        </div>
+                                        <dir className="text-left leading-3	">
+                                            <p><small>Get it on</small></p>
+                                            <p className="font-bold text-xs">App Store</p>
+                                        </dir>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                {/* Use the free Daraz Seller App section end here */}
 
 
 
