@@ -7,7 +7,7 @@ const VendorSignUpPage = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     // input slider functionality for verification 
-    const [slideInput, setSlideInput] = useState(50);
+    const [slideInput, setSlideInput] = useState(0);
 
     const handleChange = (event) => {
         setSlideInput(event.target.value);
@@ -160,11 +160,14 @@ const VendorSignUpPage = () => {
 
                 {/* resister form section start here */}
                 <section style={{ background: "#FD5417" }}>
-                    <div className="max-w-6xl mx-auto py-10">
+                    <div className="max-w-6xl mx-auto py-20">
                         <div className="grid md:grid-cols-2 gap-10">
                             <div>
-                                <h1 className="text-white text-5xl font-bold">Bangladesh's #1 Marketplace</h1>
+                                <h1 className="text-white text-6xl font-bold mt-16">Bangladesh's #1 Marketplace</h1>
                                 <p className="text-xl text-white mt-7">Create a Daraz seller account in 5 minutes and reach millions of customers today!</p>
+                                <div>
+                                    <img src="https://static.vecteezy.com/system/resources/previews/009/417/126/non_2x/ecommerce-icon-empty-shopping-cart-3d-illustration-free-png.png" alt="" />
+                                </div>
                             </div>
                             <div>
                                 <div className="flex items-center justify-between gap-5">
@@ -196,7 +199,7 @@ const VendorSignUpPage = () => {
                                                                 max="100"
                                                                 value={slideInput}
                                                                 onChange={handleChange}
-                                                                className="w-full h-2 appearance-none rounded-full focus:outline-none"
+                                                                className="w-full h-5 appearance-none rounded focus:outline-none"
                                                             />
                                                         </div>
                                                     </div>
@@ -205,17 +208,41 @@ const VendorSignUpPage = () => {
                                         </div>
 
                                         {
-                                            (slideInput == 100) ? <div>
-                                                <label htmlFor="phnNumber">The verification code has been sent to {`0856749766`}</label>
-                                                <br />
-                                                <div className="relative">
-                                                    <input className="border p-1 w-full rounded-md px-4" type="number" id="Enter " placeholder="Enter verification code" />
-                                                    <button className="absolute right-3 top-1 text-slate-500">Send</button>
+                                            (slideInput == 100)
+                                                ?
+                                                <div>
+                                                    <div>
+                                                        <label htmlFor="phnNumber">The verification code has been sent to {`0856749766`}</label>
+                                                        <br />
+                                                        <div className="relative">
+                                                            <input className="border p-1 w-full rounded-md px-4" type="number" id="Enter " placeholder="Enter verification code" />
+                                                            <button className="absolute right-3 top-1 text-slate-500">Send</button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="mt-5">
+                                                        <label htmlFor="PasS">Setup Password</label>
+                                                        <br />
+                                                        <input className="border p-1 w-full rounded-md px-4" type="number" id="PasS" placeholder="Min.8 character, 1 uppercase letter, 1 number, 1 symbol" />
+
+                                                        <input className="border p-1 w-full rounded-md px-4 mt-4" type="number" id="PasS" placeholder="Confirm password" />
+                                                    </div>
+
+
+                                                    <div className="mt-5">
+                                                        <label className="font-bold" htmlFor="phnNumber">Enter Referral Code
+                                                        </label>
+                                                        <br />
+                                                        <input className="border p-1 w-full rounded-md px-4" type="number" id="Enter " placeholder="Enter Referral Code" />
+                                                    </div>
+
                                                 </div>
-                                            </div> : ""
+                                                : ""
                                         }
 
                                         <button type="submit" className="rounded-md bg-orange-600 mt-7 w-full p-1 text-white">Create Account</button>
+
+                                        <p className="mt-5"><small>By clicking ‘Create Account’, you’ve read and agreed to our terms and conditions <a href="">Terms & Conditions</a> and for my personal data to be processed according to Daraz <a href="">Privacy Policy</a>.</small></p>
                                     </form>
                                 </div>
                             </div>
@@ -223,6 +250,30 @@ const VendorSignUpPage = () => {
                     </div>
                 </section>
                 {/* resister form section end here */}
+
+
+
+                {/* Why Sell on Daraz? section start here */}
+
+                <section className="bg-white">
+                    <div className="max-w-6xl mx-auto py-20">
+                        <h2 className="text-6xl mb-14 font-semibold">Why Sell on Daraz? </h2>
+                        <div className="grid sm:grid-cols-2md:grid-cols-3 lg:grid-cols-4 gap-5">
+                            <div className="flex items-center justify-center">
+                                <div className="flex gap-3">
+                                    <img src="" alt="" />
+                                    <div>
+                                        <h1 className="mb-3 text-3xl font-semibold">Reach</h1>
+                                        <p>Millions of customers on Daraz, Pakistan's most visited shopping destination</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Why Sell on Daraz? section end here */}
+
 
             </main>
             <footer>
