@@ -258,7 +258,7 @@ const VendorSignUpPage = () => {
 
                 <section className="bg-white">
                     <div className="max-w-6xl mx-auto py-20">
-                        <h2 className="text-2xl md:text-6xl mb-16 font-semibold">Why Sell on Daraz? </h2>
+                        <h2 className="text-2xl md:text-5xl mb-16 font-semibold">Why Sell on Daraz? </h2>
                         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-7 md:gap-14">
 
                             <div className="flex items-center justify-center">
@@ -376,6 +376,80 @@ const VendorSignUpPage = () => {
                 </section>
 
                 {/* img grid section end here */}
+
+
+                {/* 5 Simple Steps to Start Selling section start here */}
+
+                <section className="bg-white py-20">
+                    <div className="max-w-6xl mx-auto">
+                        <h2 className="text-2xl md:text-5xl mb-16 font-semibold">5 Simple Steps to Start Selling </h2>
+                        <div>
+                            <div className="grid sm:grid-cols-2 md:grid-cols-5 gap-7 md:gap-14">
+
+                                <div className="flex justify-center">
+                                    <div >
+                                        <img className="w-16 h-16" src="https://png.pngtree.com/png-vector/20220527/ourmid/pngtree-sign-up-button-on-white-background-png-image_4751425.png" alt="" />
+                                        <div>
+                                            <h1 className="mb-3 text-lg">Signup for Free</h1>
+                                            <p><small>Create your account through our website or mobile app with just your phone number
+                                            </small></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center">
+                                    <div >
+                                        <img className="w-16 h-16" src="https://png.pngtree.com/png-vector/20220527/ourmid/pngtree-sign-up-button-on-white-background-png-image_4751425.png" alt="" />
+                                        <div>
+                                            <h1 className="mb-3 text-lg">Add Profile Information</h1>
+                                            <p><small>Complete your profile by providing your email and store name so that we can identify you
+                                            </small></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center">
+                                    <div >
+                                        <img className="w-16 h-16" src="https://png.pngtree.com/png-vector/20220527/ourmid/pngtree-sign-up-button-on-white-background-png-image_4751425.png" alt="" />
+                                        <div>
+                                            <h1 className="mb-3 text-lg">Add Address Information</h1>
+                                            <p><small>Provide all address details of your business
+                                            </small></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center">
+                                    <div >
+                                        <img className="w-16 h-16" src="https://png.pngtree.com/png-vector/20220527/ourmid/pngtree-sign-up-button-on-white-background-png-image_4751425.png" alt="" />
+                                        <div>
+                                            <h1 className="mb-3 text-lg">Add ID & Bank Information</h1>
+                                            <p><small>Add in your ID & Business related details. Include necessary bank information for payments
+                                            </small></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-center">
+                                    <div >
+                                        <img className="w-16 h-16" src="https://png.pngtree.com/png-vector/20220527/ourmid/pngtree-sign-up-button-on-white-background-png-image_4751425.png" alt="" />
+                                        <div>
+                                            <h1 className="mb-3 text-lg">List Products</h1>
+                                            <p><small>Add products to your store through seller center. Start selling as soon as your products go live after going through quality control"
+                                            </small></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* 5 Simple Steps to Start Selling section end here */}
+
+
+
 
             </main>
             <footer>
