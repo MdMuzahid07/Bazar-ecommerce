@@ -602,8 +602,19 @@ const VendorSignUpPage = () => {
 
 
             </main>
-            <footer>
 
+
+            <footer className="py-16 bg-white">
+                <div style={{ backgroundColor: "#F75606" }}>
+                    <div className="max-w-6xl mx-auto p-5">
+                        <div className="flex flex-wrap items-center justify-center md:justify-between gap-5">
+                            <div>
+                                <h2 className="text-2xl md:text-4xl font-semibold text-white">What are you waiting for? <br /> Start selling with Daraz today.</h2>
+                            </div>
+                            <button className="text-white font-semibold border border-2 border-white rounded-lg px-5 py-2">GET START</button>
+                        </div>
+                    </div>
+                </div>
             </footer>
 
         </section>
