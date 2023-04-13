@@ -51,29 +51,72 @@ const VendorSignUpPage = () => {
                                         <div className="origin-top-right absolute left-0 mt-2 w-44 z-50 bg-white border rounded">
                                             <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
 
-                                                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 flex items-center justify-between gap-2" role="menuitem">
-                                                    <div className="flex items-center gap-2">
-                                                        <img className="w-7" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/800px-Flag_of_Bangladesh.svg.png" alt="" />
-                                                        <small>Bangladesh</small>
+                                                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
+                                                    <div>
+                                                        <div className="relative group">
+                                                            <button className="flex items-center justify-between gap-2 w-full">
+                                                                <div className="flex items-center gap-2">
+                                                                    <img className="w-7" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/800px-Flag_of_Bangladesh.svg.png" alt="" />
+                                                                    <small>Bangladesh</small>
+                                                                </div>
+                                                                <IoIosArrowForward />
+                                                            </button>
+                                                            <ul className="absolute z-30 -right-16 top-0 hidden text-gray-700  group-hover:block border rounded bg-white w-20">
+                                                                <li className="hover:bg-slate-200 py-1 w-full p-2">
+                                                                    Bangla
+                                                                </li>
+                                                                <li className="hover:bg-slate-200 py-1 w-full p-2">
+                                                                    English
+                                                                </li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
-                                                    <IoIosArrowForward />
                                                 </a>
 
-                                                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 flex items-center justify-between gap-2" role="menuitem">
-                                                    <div className="flex items-center gap-2">
-                                                        <img className="w-7" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/800px-Flag_of_Bangladesh.svg.png" alt="" />
-                                                        <small>Bangladesh</small>
+                                                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
+                                                    <div>
+                                                        <div className="relative group">
+                                                            <button className="flex items-center justify-between gap-2 w-full">
+                                                                <div className="flex items-center gap-2">
+                                                                    <img className="w-7" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/800px-Flag_of_Bangladesh.svg.png" alt="" />
+                                                                    <small>Bangladesh</small>
+                                                                </div>
+                                                                <IoIosArrowForward />
+                                                            </button>
+                                                            <ul className="absolute z-30 -right-16 top-0 hidden text-gray-700  group-hover:block border rounded bg-white w-20">
+                                                                <li className="hover:bg-slate-200 py-1 w-full p-2">
+                                                                    Bangla
+                                                                </li>
+                                                                <li className="hover:bg-slate-200 py-1 w-full p-2">
+                                                                    English
+                                                                </li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
-                                                    <IoIosArrowForward />
                                                 </a>
 
-                                                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 flex items-center justify-between gap-2" role="menuitem">
-                                                    <div className="flex items-center gap-2">
-                                                        <img className="w-7" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/800px-Flag_of_Bangladesh.svg.png" alt="" />
-                                                        <small>Bangladesh</small>
+                                                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
+                                                    <div>
+                                                        <div className="relative group">
+                                                            <button className="flex items-center justify-between gap-2 w-full">
+                                                                <div className="flex items-center gap-2">
+                                                                    <img className="w-7" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/800px-Flag_of_Bangladesh.svg.png" alt="" />
+                                                                    <small>Bangladesh</small>
+                                                                </div>
+                                                                <IoIosArrowForward />
+                                                            </button>
+                                                            <ul className="absolute z-30 -right-16 top-0 hidden text-gray-700  group-hover:block border rounded bg-white w-20">
+                                                                <li className="hover:bg-slate-200 py-1 w-full p-2">
+                                                                    Bangla
+                                                                </li>
+                                                                <li className="hover:bg-slate-200 py-1 w-full p-2">
+                                                                    English
+                                                                </li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
-                                                    <IoIosArrowForward />
                                                 </a>
+
 
                                             </div>
                                         </div>
