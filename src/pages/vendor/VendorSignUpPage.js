@@ -6,6 +6,13 @@ const VendorSignUpPage = () => {
     // for header language state
     const [isOpen, setIsOpen] = useState(false);
 
+    // input slider functionality for verification 
+    const [slideInput, setSlideInput] = useState(50);
+
+    const handleChange = (event) => {
+        setSlideInput(event.target.value);
+    };
+
 
     return (
         <section>
@@ -149,8 +156,73 @@ const VendorSignUpPage = () => {
                 </div>
             </header>
             {/* header area end here */}
-
             <main>
+
+                {/* resister form section start here */}
+                <section style={{ background: "#FD5417" }}>
+                    <div className="max-w-6xl mx-auto py-10">
+                        <div className="grid md:grid-cols-2 gap-10">
+                            <div>
+                                <h1 className="text-white text-5xl font-bold">Bangladesh's #1 Marketplace</h1>
+                                <p className="text-xl text-white mt-7">Create a Daraz seller account in 5 minutes and reach millions of customers today!</p>
+                            </div>
+                            <div>
+                                <div className="flex items-center justify-between gap-5">
+                                    <p className="text-sm text-white">Want to sell from overseas to Pakistan?</p>
+                                    <button className="text-sm px-4 py-1 border border-white text-white font-bold rounded">Register as Global Seller</button>
+                                </div>
+
+                                <div className="mt-5 bg-slate-200 rounded-xl px-10 py-7">
+                                    <h2 className="text-3xl font-semibold text-center mb-3">Create an Account</h2>
+                                    <p className=" text-lg text-center">Welcome! Millions of Daraz users are waiting to buy your product.
+                                    </p>
+                                    <form action="">
+                                        <div className="mt-5">
+                                            <label htmlFor="phnNumber">Phone</label>
+                                            <br />
+                                            <input className="border p-1 w-full rounded-md px-4" type="number" id="phnNumber" placeholder="+880 enter your phone number" />
+                                        </div>
+                                        <div className="mt-5">
+                                            <label className="font-bold" htmlFor="phnNumber">Verification</label>
+                                            <br />
+                                            {
+                                                !(slideInput == 100) ? <div>
+                                                    <div className="mt-4">
+                                                        <div className="relative">
+                                                            <input
+                                                                id="slider"
+                                                                type="range"
+                                                                min="0"
+                                                                max="100"
+                                                                value={slideInput}
+                                                                onChange={handleChange}
+                                                                className="w-full h-2 appearance-none rounded-full focus:outline-none"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div> : ""
+                                            }
+                                        </div>
+
+                                        {
+                                            (slideInput == 100) ? <div>
+                                                <label htmlFor="phnNumber">The verification code has been sent to {`0856749766`}</label>
+                                                <br />
+                                                <div className="relative">
+                                                    <input className="border p-1 w-full rounded-md px-4" type="number" id="Enter " placeholder="Enter verification code" />
+                                                    <button className="absolute right-3 top-1 text-slate-500">Send</button>
+                                                </div>
+                                            </div> : ""
+                                        }
+
+                                        <button type="submit" className="rounded-md bg-orange-600 mt-7 w-full p-1 text-white">Create Account</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                {/* resister form section end here */}
 
             </main>
             <footer>
