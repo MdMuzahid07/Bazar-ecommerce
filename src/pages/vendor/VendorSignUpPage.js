@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { GrLanguage } from 'react-icons/gr';
+import { IoIosArrowForward } from 'react-icons/io';
 
 const VendorSignUpPage = () => {
     // for header language state
@@ -21,7 +22,7 @@ const VendorSignUpPage = () => {
                                     <div>
                                         <button
                                             type="button"
-                                            className="inline-flex justify-center w-full  px-2 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 "
+                                            className="inline-flex justify-center w-full  px-2 py-2 bg-white text-sm font-medium text-gray-700"
                                             id="options-menu"
                                             aria-haspopup="true"
                                             aria-expanded="true"
@@ -29,7 +30,9 @@ const VendorSignUpPage = () => {
                                         >
                                             <div className="flex items-center gap-2">
                                                 <GrLanguage />
+
                                                 <p><small>{`bangla`}</small></p>
+
                                                 <img className="w-7" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/800px-Flag_of_Bangladesh.svg.png" alt="" />
 
                                                 <div className="flex">
@@ -47,8 +50,31 @@ const VendorSignUpPage = () => {
                                     {isOpen && (
                                         <div className="origin-top-right absolute left-0 mt-2 w-44 z-50 bg-white border rounded">
                                             <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                                                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Bangladesh</a>
-                                                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Pakistan</a>
+
+                                                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 flex items-center justify-between gap-2" role="menuitem">
+                                                    <div className="flex items-center gap-2">
+                                                        <img className="w-7" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/800px-Flag_of_Bangladesh.svg.png" alt="" />
+                                                        <small>Bangladesh</small>
+                                                    </div>
+                                                    <IoIosArrowForward />
+                                                </a>
+
+                                                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 flex items-center justify-between gap-2" role="menuitem">
+                                                    <div className="flex items-center gap-2">
+                                                        <img className="w-7" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/800px-Flag_of_Bangladesh.svg.png" alt="" />
+                                                        <small>Bangladesh</small>
+                                                    </div>
+                                                    <IoIosArrowForward />
+                                                </a>
+
+                                                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 flex items-center justify-between gap-2" role="menuitem">
+                                                    <div className="flex items-center gap-2">
+                                                        <img className="w-7" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/800px-Flag_of_Bangladesh.svg.png" alt="" />
+                                                        <small>Bangladesh</small>
+                                                    </div>
+                                                    <IoIosArrowForward />
+                                                </a>
+
                                             </div>
                                         </div>
                                     )}
