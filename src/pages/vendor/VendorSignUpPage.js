@@ -9,9 +9,11 @@ const VendorSignUpPage = () => {
 
     return (
         <section>
+
+            {/* header area start here */}
             <header>
                 <div className="bg-white w-full">
-                    <div className="max-w-6xl mx-auto py-5   border">
+                    <div className="max-w-6xl mx-auto py-5">
                         <div className="flex flex-wrap justify-center md:justify-between items-center gap-5">
                             <div className="flex items-center">
                                 <div>
@@ -117,25 +119,44 @@ const VendorSignUpPage = () => {
                                                     </div>
                                                 </a>
 
-
                                             </div>
                                         </div>
                                     )}
                                 </div>
                             </div>
                             <div>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut quos nihil
+                                <div className="flex items-center gap-5">
+                                    <div>
+                                        <label className="font-semibold" htmlFor="emailOrPhn"><small>Email Or Phone</small></label>
+                                        <br />
+                                        <input className="border rounded w-44 p-1" type="number" placeholder="+008" id="emailOrPhn" />
+                                    </div>
+                                    <div>
+                                        <label className="font-semibold" htmlFor="LPass"><small>Password</small></label>
+                                        <br />
+                                        <input className="border rounded w-44 p-1" type="password" placeholder="########" id="LPass" />
+                                        <br />
+                                    </div>
+                                    <button className="px-8 py-1 bg-orange-500 rounded text-white font-semibold -mb-5">Login</button>
+                                </div>
+
+                                <a href="">
+                                    <p className="underline"><small>Forgot your password?</small></p>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </header>
+            {/* header area end here */}
+
             <main>
 
             </main>
             <footer>
 
             </footer>
+
         </section>
     );
 };
