@@ -253,27 +253,80 @@ const VendorSignUpPage = () => {
 
 
 
+
                 {/* Why Sell on Daraz? section start here */}
 
                 <section className="bg-white">
                     <div className="max-w-6xl mx-auto py-20">
-                        <h2 className="text-6xl mb-14 font-semibold">Why Sell on Daraz? </h2>
-                        <div className="grid sm:grid-cols-2md:grid-cols-3 lg:grid-cols-4 gap-5">
+                        <h2 className="text-2xl md:text-6xl mb-16 font-semibold">Why Sell on Daraz? </h2>
+                        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 md:gap-16">
+
                             <div className="flex items-center justify-center">
                                 <div className="flex gap-3">
-                                    <img src="" alt="" />
+                                    <img className="w-16 h-16" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ05DV-4G3zQKO8i7rQgOhhrADWH_j5vNaoFMdBF-VmjK8YtNl7" alt="" />
                                     <div>
                                         <h1 className="mb-3 text-3xl font-semibold">Reach</h1>
                                         <p>Millions of customers on Daraz, Pakistan's most visited shopping destination</p>
                                     </div>
                                 </div>
                             </div>
+
+                            <div className="flex items-center justify-center">
+                                <div className="flex gap-3">
+                                    <img className="w-16 h-16" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ05DV-4G3zQKO8i7rQgOhhrADWH_j5vNaoFMdBF-VmjK8YtNl7" alt="" />
+                                    <div>
+                                        <h1 className="mb-3 text-3xl font-semibold">Reach</h1>
+                                        <p>Millions of customers on Daraz, Pakistan's most visited shopping destination</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="flex items-center justify-center">
+                                <div className="flex gap-3">
+                                    <img className="w-16 h-16" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ05DV-4G3zQKO8i7rQgOhhrADWH_j5vNaoFMdBF-VmjK8YtNl7" alt="" />
+                                    <div>
+                                        <h1 className="mb-3 text-3xl font-semibold">Reach</h1>
+                                        <p>Millions of customers on Daraz, Pakistan's most visited shopping destination</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="flex items-center justify-center">
+                                <div className="flex gap-3">
+                                    <img className="w-16 h-16" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ05DV-4G3zQKO8i7rQgOhhrADWH_j5vNaoFMdBF-VmjK8YtNl7" alt="" />
+                                    <div>
+                                        <h1 className="mb-3 text-3xl font-semibold">Reach</h1>
+                                        <p>Millions of customers on Daraz, Pakistan's most visited shopping destination</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div className="flex items-center justify-center">
+                                <div className="flex gap-3">
+                                    <img className="w-16 h-16" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ05DV-4G3zQKO8i7rQgOhhrADWH_j5vNaoFMdBF-VmjK8YtNl7" alt="" />
+                                    <div>
+                                        <h1 className="mb-3 text-3xl font-semibold">Reach</h1>
+                                        <p>Millions of customers on Daraz, Pakistan's most visited shopping destination</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="flex items-center justify-center">
+                                <div className="flex gap-3">
+                                    <img className="w-16 h-16" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ05DV-4G3zQKO8i7rQgOhhrADWH_j5vNaoFMdBF-VmjK8YtNl7" alt="" />
+                                    <div>
+                                        <h1 className="mb-3 text-3xl font-semibold">Reach</h1>
+                                        <p>Millions of customers on Daraz, Pakistan's most visited shopping destination</p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </section>
 
                 {/* Why Sell on Daraz? section end here */}
-
 
             </main>
             <footer>
