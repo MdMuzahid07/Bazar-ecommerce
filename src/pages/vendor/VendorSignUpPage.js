@@ -450,6 +450,28 @@ const VendorSignUpPage = () => {
 
 
 
+                {/* learn about daraz seller signup section start here */}
+
+                <section className="bg-white py-20">
+                    <div className="max-w-6xl mx-auto">
+                        <div className="p-4 rounded-lg" style={{ background: "#F75606" }}>
+                            <div className=" grid md:grid-cols-6 gap-7 md:gap-14">
+                                <div className="col-span-2">
+                                    <h1 className="text-2xl md:text-5xl font-bold text-wrap text-white">Learn About Daraz Seller Sign Up</h1>
+                                    <p className="text-white text-lg mt-10">Watch Here </p>
+                                </div>
+                                <div className="col-span-4">
+                                    <iframe className="w-full min-h-72 md:h-96 rounded-lg" src="https://www.youtube.com/embed/uXcCW6oW5Zw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* learn about daraz seller signup section end here */}
+
+
+
 
             </main>
             <footer>
