@@ -70,7 +70,7 @@ export default function Home() {
         <Header toggleMobileSearchDropdown={toggleMobileSearchDropdown} toggleSidebarNav={toggleSidebarNav} toggleSidebarCart={toggleSidebarCart} handleOpenModal={handleOpenModal} />
 
         {/* homepage component */}
-        {/* <Main /> */}
+        <Main />
 
         {/* category page */}
         {/* <Categories /> */}
@@ -87,7 +87,7 @@ export default function Home() {
 
         {/* <OrderTrackPage /> */}
 
-        <VendorSignUpPage />
+        {/* <VendorSignUpPage /> */}
 
 
 
