@@ -15,11 +15,11 @@ const SliderProductCard = () => {
                     <h1 className="text-xl font-bold my-2 text-center">$210.00</h1>
                 </div>
                 <div className="flex items-center gap-3">
-                    <button className="border rounded-full flex justify-center items-center max-w-16 max-h-16 p-1">
+                    <button className="hover:bg-black text-white bg-orange-600 border rounded-full transition duration-500 flex justify-center items-center max-w-16 max-h-16 p-1">
                         <BiShoppingBag />
                     </button>
-                    <button className="border border-black bg-black hover:bg-white hover:text-black text-white rounded-full font-bold w-full text-xs p-1">BUY NOW</button>
-                    <button className="border rounded-full flex justify-center items-center max-w-16 max-h-16 p-1">
+                    <button className="border border-black bg-black hover:bg-white hover:text-black text-white rounded-full font-bold w-full transition duration-500 text-xs p-1">BUY NOW</button>
+                    <button className="hover:bg-black hover:text-white border rounded-full flex justify-center items-center max-w-16 max-h-16 p-1">
                         <AiOutlineHeart />
                     </button>
                 </div>
