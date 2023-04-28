@@ -5,10 +5,16 @@ import { BiShoppingBag } from 'react-icons/bi';
 
 const SliderProductCard = () => {
     return (
-        <div className={`bg-white rounded border border-white hover:border hover:border-black transition duration-500 relative ${styles.productCard}`}>
+        <div className={`bg-white rounded border border-white hover:border overflow-hidden hover:border-black transition duration-500 relative ${styles.productCard}`}>
             <div>
-                <img className={`w-full ${styles.cardImgZoom}`} src="https://bazaar.ui-lib.com/_next/image?url=%2Fassets%2Fimages%2Fproducts%2FFashion%2FClothes%2F1.SilverHighNeckSweater.png&w=1920&q=75" alt="productImg" />
+                <img
+                    src="https://static-01.daraz.com.bd/p/e318dea1b6c7fc29b50f50e825f5633b.jpg"
+                    alt="productImg"
+                    layout="responsive"
+                    className={`w-full object-fit object-cover object-center ${styles.cardImgZoom}`}
+                />
             </div>
+            <p className="text-center text-xs"><small>Code #985987498987</small></p>
             <div className="p-5">
                 <div className="text-center">
                     <h1 className="text-sm">Silver High Neck Sweater</h1>
