@@ -9,6 +9,7 @@ import "swiper/css/navigation";
 // import required modules
 import { Navigation } from "swiper";
 import SliderSlideCard from './SliderSlideCard';
+import SliderProductCard from '../DealsOfTheDaySlider/SliderProductCard';
 
 const ElectronicsAsideSectionSlider = () => {
     return (
@@ -37,31 +38,31 @@ const ElectronicsAsideSectionSlider = () => {
 
                 {/* this card have a css file, called SliderProductCard.module.css */}
                 <SwiperSlide>
-                    <SliderSlideCard />
+                    <SliderProductCard />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <SliderSlideCard />
+                    <SliderProductCard />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <SliderSlideCard />
+                    <SliderProductCard />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <SliderSlideCard />
+                    <SliderProductCard />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <SliderSlideCard />
+                    <SliderProductCard />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <SliderSlideCard />
+                    <SliderProductCard />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <SliderSlideCard />
+                    <SliderProductCard />
                 </SwiperSlide>
 
             </Swiper>

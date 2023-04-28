@@ -403,7 +403,7 @@ const Main = () => {
 
 
                 <section className="px-3 lg:px-0 mb-16">
-                    <h2 className="mb-5 text-xl font-bold">Featured Brands</h2>
+                    <h2 className="mb-5 text-xl font-bold">Best Selling All Time</h2>
                     <div>
                         {/* reused component */}
                         <DealsOfTheDay />
